@@ -1,0 +1,68 @@
+/* ==========================================================================
+   SMART DESERT PIVOT (SDP) — DESIGN TOKENS (variables.css)
+   Hybrid Design System: T1 Energy (60% Industrial CleanTech) + Pirsch (40% Interactive Paper & Ink)
+   ========================================================================== */
+:root {
+  /* --- T1 Energy Surfaces & Monochromatic Warmth --- */
+  --color-vellum: #f0efe9;           /* Base page background (T1 Vellum Canvas) */
+  --color-cream-paper: #f8f5ed;      /* Card & interactive notebook surface (Pirsch Cream Paper) */
+  --color-paper-white: #ffffff;      /* Elevated panels, inputs, accordion buttons */
+  --color-carbon-warm: #322d2a;      /* T1 Floating Pill Nav, primary dark pills, 4px square indicators */
+  --color-onyx-depth: #0f0e12;       /* T1 Footer surface & deep industrial telemetry monitors */
+  --color-ink: #000000;              /* Pirsch 1px hairline borders & high-contrast display ink */
+  --color-graphite: #5c5854;         /* Secondary prose & technical descriptions */
+  --color-mercury: #8b8b8b;          /* Muted captions, timestamps, unit labels */
+
+  /* --- Pirsch & SDP Chromatic Signals (Rationed Discipline) --- */
+  --color-sunshine-highlight: #ffda6e; /* Primary conversion CTA fill, step badges, key callouts */
+  --color-sunshine-hover: #f5cc52;
+  --color-mint-signal: #6ece9d;        /* Live status dot, active nav state, positive water savings */
+  --color-sdp-emerald: #1f6f43;        /* SDP Official Brand Green */
+  --color-sdp-forest: #134629;         /* Deep agricultural accent */
+  --color-alert-amber: #d97706;        /* Desert heat / wind warning signal */
+  --color-alert-red: #dc2626;          /* Critical stop / fault signal */
+  --color-water-blue: #0284c7;         /* Irrigation spray & hydro metrics */
+
+  /* --- Typography Families --- */
+  --font-sans-ar: 'Tajawal', 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: 'Tajawal', 'DM Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+  /* --- Type Scale (T1 Energy + Pirsch Normalized) --- */
+  --text-label: 12px;
+  --text-caption: 14px;
+  --text-body-sm: 15px;
+  --text-body: 17px;
+  --text-subheading: 21px;
+  --text-heading-sm: 24px;
+  --text-heading: 32px;
+  --text-display-sm: 40px;
+  --text-display: 52px;
+
+  /* --- Spacing Scale (4px / 8px Grid) --- */
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-96: 96px;
+
+  /* --- Border Radii (T1 Portholes & Pills + Pirsch 24px Cards) --- */
+  --radius-inputs: 8px;
+  --radius-images: 14px;
+  --radius-nav: 16px;
+  --radius-cards: 24px;
+  --radius-porthole: 56px;
+  --radius-pills: 100px;
+  --radius-tags: 9999px;
+
+  /* --- Layout & Borders --- */
+  --page-max-width: 1240px;
+  --border-hairline: 1px solid #322d2a;
+  --border-ink: 1px solid #000000;
+  --border-subtle: 1px solid rgba(50, 45, 42, 0.18);
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}

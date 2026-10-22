@@ -1,0 +1,330 @@
+/* ==========================================================================
+   SMART DESERT PIVOT (SDP) — HYBRID COMPONENTS (components.css)
+   Pirsch 1px Hairline Cards + Sunshine CTAs + T1 Portholes & Accordions
+   ========================================================================== */
+
+/* Buttons */
+.btn-sunshine {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--color-sunshine-highlight);
+  color: var(--color-ink);
+  border: var(--border-ink);
+  border-radius: var(--radius-pills);
+  padding: 13px 24px;
+  font-weight: 700;
+  font-size: 14.5px;
+  transition: var(--transition-fast);
+}
+
+.btn-sunshine:hover {
+  background-color: var(--color-sunshine-hover);
+  transform: translateY(-1px);
+}
+
+.btn-carbon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--color-carbon-warm);
+  color: var(--color-paper-white);
+  border: 1px solid var(--color-carbon-warm);
+  border-radius: var(--radius-pills);
+  padding: 13px 24px;
+  font-weight: 600;
+  font-size: 14.5px;
+  transition: var(--transition-fast);
+}
+
+.btn-carbon:hover {
+  background-color: var(--color-ink);
+}
+
+.btn-ghost-ink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: transparent;
+  color: var(--color-ink);
+  border: var(--border-ink);
+  border-radius: var(--radius-pills);
+  padding: 13px 24px;
+  font-weight: 600;
+  font-size: 14.5px;
+  transition: var(--transition-fast);
+}
+
+.btn-ghost-ink:hover {
+  background-color: var(--color-carbon-warm);
+  color: var(--color-paper-white);
+}
+
+/* Pirsch Feature Card (Cream Paper + 24px radius + 1px solid Ink border, Zero Shadow) */
+.pirsch-card {
+  background-color: var(--color-cream-paper);
+  border: var(--border-ink);
+  border-radius: var(--radius-cards);
+  padding: var(--spacing-32);
+  transition: var(--transition-fast);
+}
+
+.pirsch-card-white {
+  background-color: var(--color-paper-white);
+  border: var(--border-ink);
+  border-radius: var(--radius-cards);
+  padding: var(--spacing-32);
+}
+
+.pirsch-card-dark {
+  background-color: var(--color-onyx-depth);
+  color: var(--color-vellum);
+  border: 1px solid var(--color-carbon-warm);
+  border-radius: var(--radius-cards);
+  padding: var(--spacing-32);
+}
+
+/* T1 Energy Porthole Image Container */
+.t1-porthole-frame {
+  border-radius: var(--radius-porthole);
+  overflow: hidden;
+  border: var(--border-ink);
+  background-color: var(--color-carbon-warm);
+  position: relative;
+}
+
+.t1-porthole-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Pirsch Printed-on-Paper Image Frame (12px radius + 1px ink border) */
+.pirsch-image-frame {
+  border-radius: var(--radius-images);
+  border: var(--border-ink);
+  overflow: hidden;
+  background-color: var(--color-paper-white);
+}
+
+/* Component Source-Code Slot Card */
+.component-slot-card {
+  background-color: var(--color-paper-white);
+  border: var(--border-ink);
+  border-radius: var(--radius-cards);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.component-img-box {
+  height: 170px;
+  border-radius: 12px;
+  border: 1px dashed var(--color-carbon-warm);
+  background-color: var(--color-cream-paper);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.component-img-box img {
+  max-height: 145px;
+  width: auto;
+  object-fit: contain;
+}
+
+.source-path-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  background-color: var(--color-vellum);
+  border: 1px solid var(--color-carbon-warm);
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-carbon-warm);
+  direction: ltr;
+  text-align: left;
+  width: 100%;
+}
+
+/* Pirsch Filter Tag Pills */
+.filter-tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-pill {
+  border-radius: var(--radius-tags);
+  background-color: var(--color-cream-paper);
+  border: var(--border-ink);
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-ink);
+  transition: var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.filter-pill:hover {
+  background-color: var(--color-sunshine-highlight);
+}
+
+.filter-pill.active {
+  background-color: var(--color-ink);
+  color: var(--color-cream-paper);
+}
+
+/* T1 Energy Expandable Accordion */
+.t1-accordion-list {
+  border-top: var(--border-hairline);
+}
+
+.t1-accordion-item {
+  border-bottom: var(--border-hairline);
+}
+
+.t1-accordion-trigger {
+  width: 100%;
+  padding: 20px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  text-align: right;
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.t1-accordion-circle {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: var(--border-ink);
+  background-color: var(--color-paper-white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 700;
+  flex-shrink: 0;
+  transition: var(--transition-fast);
+}
+
+.t1-accordion-item.open .t1-accordion-circle {
+  background-color: var(--color-sunshine-highlight);
+}
+
+.t1-accordion-body {
+  display: none;
+  padding: 0 4px 22px 4px;
+  color: var(--color-graphite);
+  font-size: 15.5px;
+  line-height: 1.7;
+}
+
+.t1-accordion-item.open .t1-accordion-body {
+  display: block;
+}
+
+/* Data Tables */
+.sdp-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border: var(--border-ink);
+  border-radius: var(--radius-images);
+  background-color: var(--color-paper-white);
+}
+
+.sdp-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: right;
+  font-size: 14.5px;
+}
+
+.sdp-table th {
+  background-color: var(--color-carbon-warm);
+  color: var(--color-paper-white);
+  padding: 14px 16px;
+  font-weight: 700;
+  border-bottom: var(--border-ink);
+}
+
+.sdp-table td {
+  padding: 13px 16px;
+  border-bottom: 1px solid rgba(50, 45, 42, 0.15);
+  color: var(--color-ink);
+}
+
+.sdp-table tr:last-child td {
+  border-bottom: none;
+}
+
+.sdp-table tr:nth-child(even) td {
+  background-color: var(--color-cream-paper);
+}
+
+/* Status Dot Badge */
+.mint-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--color-mint-signal);
+  color: var(--color-ink);
+  border: var(--border-ink);
+  border-radius: var(--radius-tags);
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* Form Controls */
+.sdp-input, .sdp-select, .sdp-textarea {
+  width: 100%;
+  background-color: var(--color-paper-white);
+  border: var(--border-ink);
+  border-radius: var(--radius-inputs);
+  padding: 11px 14px;
+  font-size: 15px;
+  color: var(--color-ink);
+}
+
+.sdp-input:focus, .sdp-select:focus, .sdp-textarea:focus {
+  outline: 2px solid var(--color-sunshine-highlight);
+}
+
+/* Toast Notification */
+.sdp-toast {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 999;
+  background-color: var(--color-carbon-warm);
+  color: var(--color-paper-white);
+  border: 2px solid var(--color-sunshine-highlight);
+  border-radius: 16px;
+  padding: 14px 20px;
+  max-width: 380px;
+  transform: translateY(150%);
+  transition: transform 0.3s ease;
+}
+
+.sdp-toast.visible {
+  transform: translateY(0);
+}

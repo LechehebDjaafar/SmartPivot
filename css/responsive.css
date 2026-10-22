@@ -1,0 +1,49 @@
+/* ==========================================================================
+   SMART DESERT PIVOT (SDP) — RESPONSIVE BREAKPOINTS (responsive.css)
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .simulator-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .nav-links-list {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  .nav-links-list.mobile-open {
+    display: flex;
+  }
+  .t1-pill-navbar {
+    flex-wrap: wrap;
+  }
+  .mobile-menu-toggle {
+    display: inline-flex;
+  }
+}
+
+@media (max-width: 680px) {
+  .grid-2, .grid-3, .grid-4, .footer-grid, .kpi-telemetry-grid {
+    grid-template-columns: 1fr;
+  }
+  .t1-porthole-frame {
+    border-radius: 28px;
+  }
+  .pirsch-card, .pirsch-card-white, .pirsch-card-dark {
+    padding: 20px;
+  }
+  .section-block {
+    padding-block: 40px;
+  }
+}

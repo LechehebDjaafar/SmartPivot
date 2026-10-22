@@ -1,0 +1,82 @@
+/* ==========================================================================
+   SMART DESERT PIVOT (SDP) — SIMULATOR & CALCULATOR UI (simulator.css)
+   ========================================================================== */
+.simulator-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: var(--spacing-32);
+  align-items: start;
+}
+
+.sim-stage-box {
+  background-color: var(--color-onyx-depth);
+  color: var(--color-vellum);
+  border: var(--border-ink);
+  border-radius: var(--radius-cards);
+  padding: var(--spacing-24);
+  position: relative;
+}
+
+.sim-canvas-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 0;
+}
+
+.sim-svg-circle {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+}
+
+.slider-control-group {
+  background-color: var(--color-paper-white);
+  border: var(--border-ink);
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+}
+
+.slider-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.sdp-range {
+  width: 100%;
+  accent-color: var(--color-sdp-emerald);
+  height: 7px;
+  cursor: pointer;
+}
+
+.kpi-telemetry-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.kpi-mini-box {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+}
+
+.kpi-mini-val {
+  font-family: var(--font-mono);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-sunshine-highlight);
+}
+
+.kpi-mini-lbl {
+  font-size: 11.5px;
+  color: #b5b1aa;
+  margin-top: 4px;
+}

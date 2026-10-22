@@ -1,0 +1,226 @@
+/* ==========================================================================
+   SMART DESERT PIVOT (SDP) — LAYOUT, PILL NAV & ONYX FOOTER (layout.css)
+   ========================================================================== */
+.container {
+  width: 100%;
+  max-width: var(--page-max-width);
+  margin-inline: auto;
+  padding-inline: var(--spacing-24);
+}
+
+.section-block {
+  padding-block: var(--spacing-64);
+  border-bottom: var(--border-subtle);
+}
+
+/* Sovereign Top Notification Bar */
+.sovereign-topbar {
+  background-color: var(--color-onyx-depth);
+  color: var(--color-vellum);
+  font-size: 13px;
+  padding: 8px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.sovereign-topbar-inner {
+  max-width: var(--page-max-width);
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.label-pill-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--color-sunshine-highlight);
+  color: var(--color-ink);
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: var(--radius-tags);
+  font-size: 11px;
+}
+
+/* T1 Energy Floating Carbon Warm Pill Navigation Bar */
+.site-header-wrap {
+  position: sticky;
+  top: 12px;
+  z-index: 100;
+  padding-inline: var(--spacing-16);
+  margin-top: var(--spacing-12);
+}
+
+.t1-pill-navbar {
+  max-width: var(--page-max-width);
+  margin-inline: auto;
+  background-color: var(--color-carbon-warm);
+  color: var(--color-paper-white);
+  border-radius: var(--radius-nav);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.brand-lockup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-logo-img {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  object-fit: contain;
+  background-color: var(--color-cream-paper);
+  padding: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.brand-title {
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: var(--color-paper-white);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.brand-subtitle {
+  font-size: 11px;
+  color: #c4c0b9;
+}
+
+.nav-links-list {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.nav-link-item {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #e4e2dd;
+  padding: 7px 12px;
+  border-radius: var(--radius-pills);
+  transition: var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-link-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-paper-white);
+}
+
+.nav-link-item.active {
+  background-color: var(--color-mint-signal);
+  color: var(--color-ink);
+  font-weight: 700;
+}
+
+.nav-live-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--color-mint-signal);
+  display: inline-block;
+}
+
+.nav-link-item.active .nav-live-dot {
+  background-color: var(--color-ink);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mobile-menu-toggle {
+  display: none;
+  color: var(--color-paper-white);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* Grid Helpers */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-32);
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-24);
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-24);
+}
+
+/* T1 Energy Onyx Depth Footer (#0f0e12) */
+.t1-onyx-footer {
+  background-color: var(--color-onyx-depth);
+  color: var(--color-vellum);
+  padding-top: var(--spacing-64);
+  padding-bottom: var(--spacing-48);
+  margin-top: var(--spacing-64);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.3fr;
+  gap: var(--spacing-32);
+  padding-bottom: var(--spacing-48);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.footer-col-title {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-sunshine-highlight);
+  margin-bottom: var(--spacing-16);
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  font-size: 14px;
+  color: #a8a49e;
+}
+
+.footer-links a:hover {
+  color: var(--color-paper-white);
+}
+
+.footer-bottom {
+  padding-top: var(--spacing-24);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 13px;
+  color: var(--color-mercury);
+}
