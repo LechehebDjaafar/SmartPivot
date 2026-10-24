@@ -5,15 +5,17 @@
   document.addEventListener('DOMContentLoaded', function () {
     function updateClocks() {
       var now = new Date();
-      var timeStr = now.toLocaleTimeString('ar-DZ', { hour12: false });
+      var lang = window.getCurrentSdpLang ? window.getCurrentSdpLang() : 'ar';
+      var locale = lang === 'ar' ? 'ar-DZ' : (lang === 'fr' ? 'fr-DZ' : 'en-GB');
+      var suffix = lang === 'ar' ? ' (توقيت الجزائر)' : (lang === 'fr' ? ' (Heure Algérie)' : ' (Algeria Time)');
+      var timeStr = now.toLocaleTimeString(locale, { hour12: false });
       document.querySelectorAll('.live-clock-val').forEach(function (el) {
-        el.textContent = timeStr + ' (توقيت الجزائر)';
+        el.textContent = timeStr + suffix;
       });
     }
     updateClocks();
     setInterval(updateClocks, 1000);
 
-    // Subtle live telemetry fluctuation on Master Hub
     var tick = 0;
     setInterval(function () {
       tick++;

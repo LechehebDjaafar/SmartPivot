@@ -19,7 +19,7 @@
   window.copyTextSafe = function (text, label) {
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(text).then(function () {
-        window.showSdpToast('تم النسخ بنجاح', 'تم نسخ ' + (label || text) + ' إلى الحافظة.');
+        window.showSdpToast('✓ Copied / تم النسخ', (label || text));
       }).catch(function () {
         fallbackCopy(text, label);
       });
@@ -37,9 +37,9 @@
     ta.select();
     try {
       document.execCommand('copy');
-      window.showSdpToast('تم النسخ بنجاح', 'تم نسخ ' + (label || text) + ' إلى الحافظة.');
+      window.showSdpToast('✓ Copied / تم النسخ', (label || text));
     } catch (e) {
-      window.showSdpToast('معلومة جاهزة', text);
+      window.showSdpToast('Info', text);
     }
     document.body.removeChild(ta);
   }
@@ -56,7 +56,7 @@
       });
     });
 
-    // T1 Energy Expandable Accordions
+    // Expandable Accordions
     document.querySelectorAll('.t1-accordion-trigger').forEach(function (trigger) {
       trigger.addEventListener('click', function () {
         var item = trigger.closest('.t1-accordion-item');

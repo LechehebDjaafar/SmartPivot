@@ -1,32 +1,19 @@
-# Smart Desert Pivot (SDP) — المنظومة الرقمية المتعددة الصفحات (GitHub Pages)
+# Smart Desert Pivot (SDP) — المنصة الاستعراضية المحدثة (Trilingual AR / FR / EN + Mobile-First)
 
-مشروع مؤسسة ناشئة جزائرية حائز رسمياً على **علامة مشروع مبتكر (Label Projet Innovant)** رقم **`09072522272`** بتاريخ **09 جويلية 2025** — حاضنة أعمال جامعة قاصدي مرباح ورقلة.
+مشروع مؤسسة ناشئة جزائرية حاصلة على **وسم لابل للمشاريع المبتكرة (Label Projet Innovant)** — حاضنة أعمال جامعة قاصدي مرباح ورقلة.
 
-## 1. هيكلة الصفحات الثمانية المستقلة
-- `index.html`: بوابة المنظومة المركزية والإحصائيات العالمية والوطنية (FAO / ONID / ODAS).
-- `technology.html`: الهندسة الصناعية لصندوق الترقية `SDP Retrofit Kit` ومعرض مواضع صور المكونات الـ 12.
-- `simulator.html`: محاكي المحور والري الصحراوي الحي (Interactive Digital Twin) بـ 6 سيناريوهات مناخية.
-- `calculator.html`: حاسبة الجدوى الاقتصادية والتوفير المائي والمالي بالدينار والسنتيم الجزائري.
-- `pilot.html`: توثيق النموذج الأولي المخبري، تصميم 3D CAD للبرج المركزي، ومخطط بنية IoT.
-- `partnerships.html`: شراكات مصنعي البيفو الأصليين (OEM) وبوابة استقطاب الفريق في ورقلة والوادي وبسكرة.
-- `about.html`: وثيقة شهادة علامة مشروع مبتكر الرسمية وملف المؤسس م. لشهب جعفر.
-- `contact.html`: مركز التواصل المباشر (`+213 658 30 14 20`) ونموذج طلب المعاينة والربط الفوري مع WhatsApp.
-
-## 2. كيفية استبدال أو إضافة صور المكونات من الكود المصدري
-جميع بطاقات المكونات في صفحتي `technology.html` و `pilot.html` مربوطة مباشرة بالمسارات التالية داخل مجلد `assets/images/`:
-- `assets/images/components/raspberry-pi.png`
-- `assets/images/components/soil-moisture-sensor.png`
-- `assets/images/components/dht22-sensor.png`
-- `assets/images/components/wind-sensor.png`
-- `assets/images/components/rain-sensor.png`
-- `assets/images/components/water-pump.png`
-- `assets/images/components/stepper-motor.png`
-- `assets/images/components/magnetic-sensor.png`
-- `assets/images/components/ldr-sensor.png`
-- `assets/images/components/flame-sensor.png`
-- `assets/images/components/solar-power-system.png`
-- `assets/images/prototype/cad-pivot-tower-base.jpg`
-- `assets/images/prototype/pvc-scale-model.jpg`
-- `assets/images/prototype/iot-architecture-diagram.jpg`
-
-يكفي وضع صورتك الجديدة بنفس الاسم داخل المجلد ليتم عرضها تلقائياً في الموقع على GitHub Pages.
+## أبرز التحديثات في النسخة المطورة (V2.0)
+1. **اعتماد الشعار الرسمي الجديد وتناسق الألوان الكامل**:
+   - استخراج لوحة الألوان مباشرة من الشعار الجديد: الأزرق المائي والشمسي (`#0284c7`)، الأخضر الزراعي (`#15803d` / `#22c55e`)، الذهبي الشمسي (`#fbbf24` / `#f59e0b`)، والكحلي الصناعي العميق (`#062847` / `#041c32`).
+2. **إعادة هيكلة شريط التنقل العلوي في 4 محاور احترافية + بوابة الاستكشاف الرباعية**:
+   - الشريط العلوي يضم 4 محاور واضحة فقط (`الرئيسية`، `التقنية والعتاد`، `بوابة التجربة والنموذج`، `الشراكات والتواصل`) مع الحفاظ على جميع الصفحات الثمانية مترابطة عبر بطاقات الاستكشاف وشريط التنقل الفرعي.
+3. **دعم اللغات الثلاث (العربية RTL، الفرنسية LTR، الإنجليزية LTR)**:
+   - تبديل فوري للغة والاتجاه عبر أزرار `العربية | FR | EN` في الشريط العلوي عبر ملف `js/i18n.js`.
+4. **وضع الهاتف المخصص (Mobile-First + Dedicated Mobile Mode)**:
+   - شريط تنقل سفلي ذكي كالتطبيقات (`bottom-app-nav`) على الهواتف، بالإضافة إلى زر `📱 وضع الهاتف` لمعاينة وتجربة واجهة الهاتف مباشرة في أي وقت.
+5. **إدراج الصور الحقيقية الجديدة والصور المولدة بالذكاء الاصطناعي**:
+   - `assets/images/components/water-flow-sensor.jpg` (حساس تدفق المياه الفعلي `YF-S201C 1-30L/min`).
+   - `assets/images/components/water-flow-sensor-top.jpg` (منظومة قياس التدفق المزدوجة في المخبر).
+   - `assets/images/components/solar-cell-lab.jpg` (اللوح الشمسي ومنظم الشحن في المخبر).
+   - `assets/images/prototype/aluminum-pivot-dimensions.jpg` (الهيكل الميكانيكي الفعلي بالألومنيوم بأبعاد `420mm × 250mm × 150mm × 140mm`).
+6. **حذف الرقم الخاص بشهادة وسم لابل** بناءً على طلب المؤسس مع إبراز صفة الاعتماد للمستثمرين والعملاء.

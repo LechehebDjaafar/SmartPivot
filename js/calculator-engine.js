@@ -1,6 +1,5 @@
 /* ==========================================================================
-   SMART DESERT PIVOT (SDP) — ALGERIAN SAHARAN ROI ENGINE (calculator-engine.js)
-   Grounded in FAO / ONID / ODAS Saharan Irrigation Benchmarks
+   SMART DESERT PIVOT (SDP) — TRILINGUAL ALGERIAN SAHARAN ROI ENGINE
    ========================================================================== */
 (function () {
   document.addEventListener('DOMContentLoaded', function () {
@@ -21,62 +20,82 @@
     var outPayback = document.getElementById('roiOutPayback');
     var outPumpHours = document.getElementById('roiOutPumpHours');
 
-    // Crop seasonal water consumption in Algerian Sahara (m3 / ha / season)
     var cropWaterNeed = {
-      wheat: 6500,     // القمح الصلب واللين (ورقلة / المنيعة / أدرار)
-      barley: 5200,    // الشعير
-      alfalfa: 12000,  // الفصة والأعلاف الخضراء (بسكرة / ورقلة)
-      potato: 8200,    // البطاطس الصحراوية (الوادي سوف)
-      corn: 9500       // الذرة العلفية وعباد الشمس (مشاريع ODAS)
+      wheat: 6500,
+      barley: 5200,
+      alfalfa: 12000,
+      potato: 8200,
+      corn: 9500
     };
 
-    // Total pumping + maintenance + energy cost per m3 in DZD
     var energyCostM3 = {
-      grid: 6.5,       // كهرباء فلاحية مدعمة (سونلغاز) + صيانة مضخات الأعماق
-      diesel: 16.5,    // مولدات المازوت والديزل في المحيطات البعيدة
-      solar: 4.0       // طاقة شمسية هجينة + إهلاك الضاغط والمضخة
+      grid: 6.5,
+      diesel: 16.5,
+      solar: 4.0
     };
 
     function computeAlgerianRoi() {
+      var lang = window.getCurrentSdpLang ? window.getCurrentSdpLang() : 'ar';
       var pivots = parseInt(pivotsRange.value, 10) || 2;
       var areaPerPivot = parseInt(areaSelect.value, 10) || 40;
       var crop = cropSelect.value || 'wheat';
       var energy = energySelect.value || 'grid';
 
-      if (pivotsBadge) pivotsBadge.textContent = pivots + ' محور';
+      if (pivotsBadge) {
+        pivotsBadge.textContent = pivots + (lang === 'ar' ? ' محور' : (lang === 'fr' ? ' Pivot(s)' : ' Pivot(s)'));
+      }
 
       var totalHa = pivots * areaPerPivot;
       var waterPerHa = cropWaterNeed[crop] || 6500;
       var baselineWaterM3 = totalHa * waterPerHa;
 
-      // Global & FAO precision irrigation water saving benchmark (28% conservative average)
       var savingRatio = 0.28;
       var savedWaterM3 = Math.round(baselineWaterM3 * savingRatio);
 
       var costPerM3 = energyCostM3[energy] || 6.5;
       var directEnergySavingsDzd = Math.round(savedWaterM3 * costPerM3);
 
-      // Fertilizer leaching prevention & yield quality bonus (~4,200 DZD per ha)
       var agronomyBonusDzd = totalHa * 4200;
       var totalAnnualSavingsDzd = directEnergySavingsDzd + agronomyBonusDzd;
       var totalCentimesMillions = (totalAnnualSavingsDzd / 10000).toFixed(1);
 
-      // SDP Smart Retrofit Kit cost: 320,000 DZD per pivot (with volume discount > 5 pivots)
       var unitKitPrice = pivots >= 5 ? 290000 : 320000;
       var totalKitInvestment = pivots * unitKitPrice;
 
       var paybackMonths = Math.max(2.5, Math.min(14, (totalKitInvestment / totalAnnualSavingsDzd) * 12)).toFixed(1);
       var savedPumpHours = Math.round(savedWaterM3 / 120);
 
-      if (outTotalHa) outTotalHa.textContent = totalHa.toLocaleString('fr-DZ') + ' هكتار';
-      if (outBaseWater) outBaseWater.textContent = baselineWaterM3.toLocaleString('fr-DZ') + ' م³';
-      if (outWaterSaved) outWaterSaved.textContent = savedWaterM3.toLocaleString('fr-DZ') + ' م³ / سنة';
-      if (outEnergySavedDzd) outEnergySavedDzd.textContent = totalAnnualSavingsDzd.toLocaleString('fr-DZ') + ' دج';
-      if (outCentimes) outCentimes.textContent = 'يعادل ' + totalCentimesMillions + ' مليون سنتيم جزائري سنوياً';
-      if (outKitInvestment) outKitInvestment.textContent = totalKitInvestment.toLocaleString('fr-DZ') + ' دج (' + (totalKitInvestment / 10000).toFixed(0) + ' مليون سنتيم)';
-      if (outPayback) outPayback.textContent = paybackMonths + ' شهر (أقل من موسم فلاحي واحد)';
-      if (outPumpHours) outPumpHours.textContent = savedPumpHours.toLocaleString('fr-DZ') + ' ساعة ضخ / سنة';
+      if (lang === 'fr') {
+        if (outTotalHa) outTotalHa.textContent = totalHa.toLocaleString('fr-DZ') + ' Hectares';
+        if (outBaseWater) outBaseWater.textContent = baselineWaterM3.toLocaleString('fr-DZ') + ' m³';
+        if (outWaterSaved) outWaterSaved.textContent = savedWaterM3.toLocaleString('fr-DZ') + ' m³ / an';
+        if (outEnergySavedDzd) outEnergySavedDzd.textContent = totalAnnualSavingsDzd.toLocaleString('fr-DZ') + ' DZD';
+        if (outCentimes) outCentimes.textContent = 'Soit ' + totalCentimesMillions + ' Millions de Centimes / an';
+        if (outKitInvestment) outKitInvestment.textContent = totalKitInvestment.toLocaleString('fr-DZ') + ' DZD (' + (totalKitInvestment / 10000).toFixed(0) + ' M Centimes)';
+        if (outPayback) outPayback.textContent = paybackMonths + ' Mois (< 1 saison agricole)';
+        if (outPumpHours) outPumpHours.textContent = savedPumpHours.toLocaleString('fr-DZ') + ' h de pompage / an';
+      } else if (lang === 'en') {
+        if (outTotalHa) outTotalHa.textContent = totalHa.toLocaleString('en-US') + ' Hectares';
+        if (outBaseWater) outBaseWater.textContent = baselineWaterM3.toLocaleString('en-US') + ' m³';
+        if (outWaterSaved) outWaterSaved.textContent = savedWaterM3.toLocaleString('en-US') + ' m³ / year';
+        if (outEnergySavedDzd) outEnergySavedDzd.textContent = totalAnnualSavingsDzd.toLocaleString('en-US') + ' DZD';
+        if (outCentimes) outCentimes.textContent = 'Equals ' + totalCentimesMillions + ' Million Centimes / year';
+        if (outKitInvestment) outKitInvestment.textContent = totalKitInvestment.toLocaleString('en-US') + ' DZD (' + (totalKitInvestment / 10000).toFixed(0) + 'M Centimes)';
+        if (outPayback) outPayback.textContent = paybackMonths + ' Months (< 1 crop season)';
+        if (outPumpHours) outPumpHours.textContent = savedPumpHours.toLocaleString('en-US') + ' pump hrs / year';
+      } else {
+        if (outTotalHa) outTotalHa.textContent = totalHa.toLocaleString('fr-DZ') + ' هكتار';
+        if (outBaseWater) outBaseWater.textContent = baselineWaterM3.toLocaleString('fr-DZ') + ' م³';
+        if (outWaterSaved) outWaterSaved.textContent = savedWaterM3.toLocaleString('fr-DZ') + ' م³ / سنة';
+        if (outEnergySavedDzd) outEnergySavedDzd.textContent = totalAnnualSavingsDzd.toLocaleString('fr-DZ') + ' دج';
+        if (outCentimes) outCentimes.textContent = 'يعادل ' + totalCentimesMillions + ' مليون سنتيم جزائري سنوياً';
+        if (outKitInvestment) outKitInvestment.textContent = totalKitInvestment.toLocaleString('fr-DZ') + ' دج (' + (totalKitInvestment / 10000).toFixed(0) + ' مليون سنتيم)';
+        if (outPayback) outPayback.textContent = paybackMonths + ' شهر (أقل من موسم فلاحي واحد)';
+        if (outPumpHours) outPumpHours.textContent = savedPumpHours.toLocaleString('fr-DZ') + ' ساعة ضخ / سنة';
+      }
     }
+
+    window.refreshSdpCalculatorLang = computeAlgerianRoi;
 
     pivotsRange.addEventListener('input', computeAlgerianRoi);
     areaSelect.addEventListener('change', computeAlgerianRoi);
@@ -94,7 +113,7 @@
         cropSelect.value = btn.getAttribute('data-crop');
         energySelect.value = btn.getAttribute('data-energy');
         computeAlgerianRoi();
-        window.showSdpToast('تطبيق نموذج مستثمرة', btn.textContent.trim());
+        window.showSdpToast('✓ Farm Preset', btn.textContent.trim());
       });
     });
 

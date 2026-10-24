@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>الهندسة الصناعية وصندوق الترقية ومواضع صور المكونات | Smart Desert Pivot (SDP)</title>
+  <title>التقنية والعتاد — صندوق الترقية والـ 14 مكوناً | Smart Desert Pivot (SDP)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@500;700&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
@@ -16,478 +16,427 @@
 </head>
 <body>
 
-  <!-- Top Sovereign Algerian Accreditation Banner -->
+  <!-- Top Sovereign Startup Banner + Language Switcher (AR / FR / EN) + Dedicated Mobile Mode -->
   <div class="sovereign-topbar">
     <div class="sovereign-topbar-inner">
       <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
-        <span class="label-pill-tag">★ علامة مشروع مبتكر معتمد</span>
-        <span>الجمهورية الجزائرية الديمقراطية الشعبية • رقم القرار الوزاري: <strong class="font-mono" style="color:var(--color-sunshine-highlight);">09072522272</strong> (حاضنة جامعة قاصدي مرباح ورقلة)</span>
+        <span class="label-pill-tag" data-i18n="topbar_badge">★ مؤسسة ناشئة حاصلة على وسم لابل (Label Projet Innovant)</span>
+        <span data-i18n="topbar_desc">منصة استعراضية للمستثمرين والعملاء والشركاء الصناعيين • حاضنة جامعة قاصدي مرباح ورقلة — الجزائر</span>
       </div>
-      <div style="display:flex;align-items:center;gap:14px;">
-        <span class="font-mono live-clock-val" style="font-size:12px;color:#b5b1aa;">09:00:00 (توقيت الجزائر)</span>
-        <a href="about.html" data-page-target="about.html" style="color:var(--color-mint-signal);font-weight:700;text-decoration:underline;">وثيقة الاعتماد الرسمي ←</a>
+      <div class="topbar-controls">
+        <div class="lang-switcher" role="group" aria-label="Language Switcher">
+          <button type="button" class="lang-btn active" data-lang-switch="ar">العربية</button>
+          <button type="button" class="lang-btn" data-lang-switch="fr">FR</button>
+          <button type="button" class="lang-btn" data-lang-switch="en">EN</button>
+        </div>
+        <a href="about.html" data-page-target="about.html" data-i18n="topbar_cert_link" style="color:#fbbf24;font-weight:800;text-decoration:underline;font-size:12px;">بطاقة الاعتماد والهوية ←</a>
       </div>
     </div>
   </div>
 
-  <!-- T1 Energy Signature Floating Carbon Warm Pill Navigation -->
+  <!-- Clean 4-Pillar Showcase Navigation Bar -->
   <header class="site-header-wrap">
     <nav class="t1-pill-navbar" aria-label="التنقل الرئيسي">
       <a href="index.html" data-page-target="index.html" class="brand-lockup">
-        <img src="assets/images/brand/logo-mark.png" alt="شعار Smart Desert Pivot" class="brand-logo-img">
+        <img src="assets/images/brand/logo-mark.png" alt="Smart Desert Pivot Logo" class="brand-logo-img">
         <div>
           <div class="brand-title">
             <span>SMART DESERT PIVOT</span>
-            <span style="font-size:11px;background:var(--color-sunshine-highlight);color:var(--color-ink);padding:1px 7px;border-radius:99px;font-weight:800;">SDP</span>
+            <span style="font-size:11px;background:var(--gradient-solar-cta);color:#041c32;padding:1px 8px;border-radius:99px;font-weight:900;">SDP</span>
           </div>
-          <div class="brand-subtitle">أنظمة الري المحوري الذكي للصحراء الجزائرية</div>
+          <div class="brand-subtitle" data-i18n="brand_subtitle">أنظمة الري المحوري الذكي والطاقة الشمسية للصحراء الجزائرية</div>
         </div>
       </a>
 
-      <button type="button" class="mobile-menu-toggle" aria-label="فتح القائمة">☰ القائمة</button>
+      <button type="button" class="mobile-menu-toggle" aria-label="فتح القائمة" data-i18n="menu_btn">☰ القائمة</button>
 
+      <!-- Strictly 4 Professional Showcase Pillars in the Top Navbar -->
       <ul class="nav-links-list">
-        <li><a href="index.html" class="nav-link-item" data-page-target="index.html"><span>الرئيسية</span></a></li>
-          <li><a href="technology.html" class="nav-link-item active" data-page-target="technology.html"><span>صندوق الترقية والمكونات</span></a></li>
-          <li><a href="simulator.html" class="nav-link-item" data-page-target="simulator.html"><span class="nav-live-dot"></span><span>محاكي المحور الحي</span></a></li>
-          <li><a href="calculator.html" class="nav-link-item" data-page-target="calculator.html"><span>حاسبة التوفير (ROI)</span></a></li>
-          <li><a href="pilot.html" class="nav-link-item" data-page-target="pilot.html"><span>النموذج الأولي و 3D CAD</span></a></li>
-          <li><a href="partnerships.html" class="nav-link-item" data-page-target="partnerships.html"><span>شراكات البيفو والفريق</span></a></li>
-          <li><a href="about.html" class="nav-link-item" data-page-target="about.html"><span>الاعتماد الوزاري</span></a></li>
-          <li><a href="contact.html" class="nav-link-item" data-page-target="contact.html"><span>تواصل ومعاينة</span></a></li>
+        <li><a href="index.html" class="nav-link-item " data-page-target="index.html"><span data-i18n="nav_home">الرئيسية</span></a></li>
+        <li><a href="technology.html" class="nav-link-item active" data-page-target="technology.html"><span data-i18n="nav_tech">التقنية والعتاد</span></a></li>
+        <li><a href="simulator.html" class="nav-link-item " data-page-target="simulator.html"><span class="nav-live-dot"></span><span data-i18n="nav_hub">بوابة التجربة والنموذج</span></a></li>
+        <li><a href="contact.html" class="nav-link-item " data-page-target="contact.html"><span data-i18n="nav_contact">الشراكات والتواصل</span></a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Main Page Content -->
+  <!-- Sub-Hub Explorer Bar: Preserves All 8 Pages without Cluttering the Main Navbar -->
+  <div class="subhub-bar">
+    <div class="subhub-inner">
+      <span class="subhub-label" data-i18n="subhub_explore_label">🧭 التنقل السريع بين الصفحات التفصيلية:</span>
+      <div class="subhub-pills">
+        <a href="index.html" data-page-target="index.html" class="subhub-pill" data-i18n="sub_index">1. العرض التنفيذي</a>
+        <a href="technology.html" data-page-target="technology.html" class="subhub-pill active" data-i18n="sub_tech">2. العتاد والحساسات (14)</a>
+        <a href="simulator.html" data-page-target="simulator.html" class="subhub-pill" data-i18n="sub_sim">3. المحاكي التفاعلي الحي</a>
+        <a href="pilot.html" data-page-target="pilot.html" class="subhub-pill" data-i18n="sub_pilot">4. النموذج الأولي الفعلي (ألومنيوم + 3D)</a>
+        <a href="calculator.html" data-page-target="calculator.html" class="subhub-pill" data-i18n="sub_calc">5. حاسبة التوفير (ROI)</a>
+        <a href="partnerships.html" data-page-target="partnerships.html" class="subhub-pill" data-i18n="sub_part">6. شراكات البيفو والفريق</a>
+        <a href="about.html" data-page-target="about.html" class="subhub-pill" data-i18n="sub_about">7. هوية المؤسسة ووسم لابل</a>
+        <a href="contact.html" data-page-target="contact.html" class="subhub-pill" data-i18n="sub_contact">8. حجز معاينة وتواصل</a>
+      </div>
+    </div>
+  </div>
   <main>
-
-  <section class="section-block" style="padding-top:36px;">
+  <section class="section-block" style="padding-top:32px;">
     <div class="container">
       <div class="grid-2" style="align-items:center;">
         <div>
           <div class="pirsch-step-badge">
             <span class="step-num">02</span>
-            <span>HARDWARE &amp; RETROFIT ARCHITECTURE • الهندسة الصناعية الميدانية</span>
+            <span data-ar="HARDWARE &amp; SENSORS • الهندسة الصناعية والحساسات الفعلية" data-fr="HARDWARE &amp; SENSORS • Ingénierie Industrielle &amp; Capteurs" data-en="HARDWARE &amp; SENSORS • Industrial Retrofit &amp; Real Sensors">HARDWARE &amp; SENSORS • الهندسة الصناعية والحساسات الفعلية</span>
           </div>
-          <h1 class="display-headline" style="margin-bottom:18px;">
-            صندوق الترقية الذكي <strong>SDP Retrofit Kit</strong>: عتاد صناعي مصمم لبيئة الصحراء
+          <h1 class="display-headline" style="margin-bottom:18px;" data-ar="صندوق الترقية الذكي <strong>SDP Retrofit Kit</strong>: عتاد صناعي متكامل لبيئة الصحراء" data-fr="Boîtier <strong>SDP Retrofit Kit</strong> : Matériel industriel conçu pour le Sahara" data-en="<strong>SDP Retrofit Kit</strong>: Industrial IoT Hardware Built for the Sahara">
+            صندوق الترقية الذكي <strong>SDP Retrofit Kit</strong>: عتاد صناعي متكامل لبيئة الصحراء
           </h1>
-          <p class="section-subhead" style="margin-bottom:24px;">
-            بدلاً من تكبيد الفلاح مئات الملايين لشراء محور جديد، صممنا وحدة أتمتة صناعية معيارية تركب مباشرة على لوحة قيادة أي محور رش قائم (Valley, Lindsay, Bauer, AFKO, AGM أو المحاور الحرفية بوادي سوف) خلال أقل من 4 ساعات عمل.
+          <p class="section-subhead" style="margin-bottom:24px;" data-ar="بدلاً من استبدال محور الرش القائم، صممنا وحدة أتمتة صناعية معيارية تركب مباشرة على لوحة قيادة أي محور (Valley, Lindsay, Bauer أو المحاور المصنعة محلياً) وتدمج حساسات التدفق المائي، رطوبة التربة، والطاقة الشمسية." data-fr="Au lieu de remplacer le pivot existant, notre unité modulaire s'installe directement sur n'importe quel pivot (Valley, Lindsay, Bauer ou fabrication locale) en intégrant débitmètre, sondes sol et panneau solaire." data-en="Instead of replacing existing pivots, our modular automation unit mounts directly onto any center-pivot panel, integrating water flow telemetry, soil moisture probes, and solar autonomy.">
+            بدلاً من استبدال محور الرش القائم، صممنا وحدة أتمتة صناعية معيارية تركب مباشرة على لوحة قيادة أي محور (Valley, Lindsay, Bauer أو المحاور المصنعة محلياً) وتدمج حساسات التدفق المائي، رطوبة التربة، والطاقة الشمسية.
           </p>
           <div style="display:flex;flex-wrap:wrap;gap:12px;">
-            <a href="simulator.html" data-page-target="simulator.html" class="btn-sunshine">اختبر استجابة العتاد في المحاكي ←</a>
-            <a href="pilot.html" data-page-target="pilot.html" class="btn-ghost-ink">مقارنة النموذج الأولي بالنسخة الصناعية</a>
+            <a href="pilot.html" data-page-target="pilot.html" class="btn-sunshine" data-ar="شاهد النموذج الأولي الميكانيكي الفعلي ←" data-fr="Voir le Prototype Mécanique Réel →" data-en="View Physical Mechanical Prototype →">شاهد النموذج الأولي الميكانيكي الفعلي ←</a>
+            <a href="simulator.html" data-page-target="simulator.html" class="btn-carbon" data-ar="اختبر استجابة الحساسات في المحاكي التفاعلي" data-fr="Tester les Capteurs dans le Simulateur" data-en="Test Sensors in Live Simulator">اختبر استجابة الحساسات في المحاكي التفاعلي</a>
           </div>
         </div>
 
         <div>
-          <div class="t1-porthole-frame" style="height:390px;">
-            <img src="assets/images/hardware/sdp-retrofit-box-ip67.jpg" alt="صندوق الترقية الصناعي SDP IP67 مثبت على برج المحور">
+          <div class="t1-porthole-frame" style="height:380px;">
+            <img src="assets/images/hardware/sdp-retrofit-box-ip67.jpg" alt="SDP Retrofit Box IP67 with Solar Panel and Flow Sensor">
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- T1 Energy Style Expandable Technical Accordions -->
+  <!-- 14 Real Hardware & Sensor Slots (Featuring the User's New Real Lab Photos first!) -->
   <section class="section-block">
     <div class="container">
-      <div class="t1-section-label">TECHNICAL STACK • الطبقات الهندسية الأربع لصندوق الترقية</div>
-      <h2 class="section-heading" style="margin-bottom:24px;">المواصفات التفصيلية للنسخة الميدانية المعتمدة (V1.0 Industrial)</h2>
-
-      <div class="t1-accordion-list">
-        <div class="t1-accordion-item open">
-          <button type="button" class="t1-accordion-trigger">
-            <span>1. وحدة المعالجة والتحكم الصناعي (ESP32-S3 Industrial PLC + 380V Isolation)</span>
-            <span class="t1-accordion-circle">−</span>
-          </button>
-          <div class="t1-accordion-body">
-            يعتمد الصندوق الميداني على متحكم صناعي ثنائي النواة <strong>ESP32-S3</strong> بتردد 240 MHz مع عزلات ضوئية (Opto-couplers) ومرحلات حالة صلبة (SSR / Contactors) للتحكم الآمن في قواطع المحركات ثلاثية الطور (380V/480V AC) ومغيرات السرعة (VFD). الغلاف الخارجي من البولي كربونات المقاوم للأشعة فوق البنفسجية بمعيار <strong>IP67</strong> المزود بصمام تنفيس الضغط ومشتت حراري ألومنيوم لتحمل حرارة تصل إلى <strong>60°C</strong> في صحراء ورقلة وعين صالح.
-          </div>
-        </div>
-
-        <div class="t1-accordion-item open">
-          <button type="button" class="t1-accordion-trigger">
-            <span>2. منظومة مجسات التربة الصناعية (RS-485 Modbus Capacitive / TDR Probes)</span>
-            <span class="t1-accordion-circle">−</span>
-          </button>
-          <div class="t1-accordion-body">
-            استبدلنا الحساسات النحاسية التقليدية التي تتآكل بفعل التمليح الصحراوي بمجسات صناعية ثلاثية القراءات (3-in-1 Soil Sensor) تعمل ببروتوكول <strong>RS-485 Modbus RTU</strong> وأقطاب من الفولاذ المقاوم للصدأ 316L المغلف بالإيبوكسي. تقيس المجسات بدقة: <strong>الرطوبة الحجمية (% VWC)</strong>، <strong>درجة حرارة الجذور (°C)</strong>، و<strong>الناقلية الكهربائية للأملاح (EC dS/m)</strong> على عمقين (15 سم و 40 سم).
-          </div>
-        </div>
-
-        <div class="t1-accordion-item">
-          <button type="button" class="t1-accordion-trigger">
-            <span>3. شبكة الاتصالات الهجينة بعيدة المدى (LoRaWAN 868MHz + 4G LTE / SMS Fallback)</span>
-            <span class="t1-accordion-circle">+</span>
-          </button>
-          <div class="t1-accordion-body">
-            نظراً لانعدام تغطية Wi-Fi في المحيطات الفلاحية الشاسعة (نصف قطر المحور 400 متر)، تتواصل عقد الحساسات في الحقل مع برج المحور عبر ترددات راديو <strong>LoRa 868 MHz</strong> بمدى يصل إلى <strong>5 كيلومترات</strong> واستهلاك طاقوي ميكرو-أمبير. يرفع الصندوق المركزي البيانات للسحابة عبر مودم صناعي <strong>SIM7600 4G LTE</strong> مع إرسال تنبيهات <strong>SMS مباشرة</strong> لهاتف الفلاح عند انقطاع المياه أو توقف أحد الأبراج.
-          </div>
-        </div>
-
-        <div class="t1-accordion-item">
-          <button type="button" class="t1-accordion-trigger">
-            <span>4. منظومة التغذية الشمسية المستقلة (50W Solar + LiFePO4 Thermal Battery)</span>
-            <span class="t1-accordion-circle">+</span>
-          </button>
-          <div class="t1-accordion-body">
-            تزود كل وحدة بلوح شمسي أحادي البلورة (50W Monocrystalline) مع منظم شحن ذكي MPPT وبطارية فوسفات الحديد والليثيوم (<strong>LiFePO4 12.8V 20Ah</strong>) التي تتحمل درجات الحرارة العالية وتدوم أكثر من 2000 دورة شحن، مما يبقِي نظام الاستشعار والإنذار ضد السرقة والأعطال نشطاً على مدار 24 ساعة حتى أثناء إيقاف المولد الكهربائي الرئيسي للمزرعة.
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Dedicated Component Slots Grid (Ready for User Source-Code Image Replacement) -->
-  <section class="section-block">
-    <div class="container">
-      <div class="t1-section-label">PROJECT COMPONENT SLOTS • بطاقات ومواضع صور مكونات المشروع</div>
-      <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:28px;">
-        <div>
-          <h2 class="section-heading" style="margin-bottom:8px;">مكتبة صور مكونات المنظومة (12 موضعاً مبرمجاً في الكود المصدري)</h2>
-          <p class="section-subhead">
-            تم تجهيز كل بطاقة أدناه بصورتها التوضيحية ومسارها البرمجي الدقيق داخل مجلد <code>assets/images/components/</code> بحيث يمكنك استبدال أو إضافة صورك الفوتوغرافية عالية الدقة مباشرة في الكود المصدري دون تعديل أي سطر HTML:
-          </p>
-        </div>
-      </div>
+      <div class="t1-section-label" data-ar="REAL PROJECT HARDWARE • مكتبة صور المكونات والحساسات المعتمدة (14 مكوناً)" data-fr="REAL PROJECT HARDWARE • Galerie des 14 Composants &amp; Capteurs" data-en="REAL PROJECT HARDWARE • 14 Validated System Components &amp; Sensors">REAL PROJECT HARDWARE • مكتبة صور المكونات والحساسات المعتمدة (14 مكوناً)</div>
+      <h2 class="section-heading" style="margin-bottom:8px;" data-ar="المكونات الفعلية للنموذج الأولي والنسخة الصناعية" data-fr="Composants Réels du Prototype et de la Version Industrielle" data-en="Real Prototype &amp; Industrial Hardware Components">المكونات الفعلية للنموذج الأولي والنسخة الصناعية</h2>
+      <p class="section-subhead" style="margin-bottom:28px;" data-ar="تضم البطاقات التالية الصور الفوتوغرافية الحقيقية الملتقطة في المخبر لحساسات التدفق والألواح الشمسية وهيكل الألومنيوم، إلى جانب بقية مكونات المنظومة:" data-fr="Voici les photographies réelles prises au laboratoire (débitmètre YF-S201C, cellule solaire, châssis aluminium) ainsi que l'ensemble des capteurs du système :" data-en="Below are the real laboratory photographs (YF-S201C water flow sensor, solar cell module, aluminum truss) alongside the complete sensor suite:">
+        تضم البطاقات التالية الصور الفوتوغرافية الحقيقية الملتقطة في المخبر لحساسات التدفق والألواح الشمسية وهيكل الألومنيوم، إلى جانب بقية مكونات المنظومة:
+      </p>
 
       <div class="grid-4">
-        <!-- Slot 1 -->
-        <!-- [SOURCE SLOT 01] استبدل الصورة في المسار: assets/images/components/raspberry-pi.png -->
-        <div class="component-slot-card">
+        <!-- NEW REAL PHOTO 1: Water Flow Sensor YF-S201C Close-up -->
+        <div class="component-slot-card" style="border:2px solid #0284c7;">
           <div>
-            <div class="component-img-box">
-              <img src="assets/images/components/raspberry-pi.png" alt="وحدة المعالجة المركزية Raspberry Pi / ESP32">
+            <div class="component-img-box" style="background:#041c32;">
+              <img src="assets/images/components/water-flow-sensor.jpg" alt="Water Flow Sensor YF-S201C">
             </div>
-            <h3 style="font-size:16.5px;font-weight:800;margin-top:12px;">1. وحدة المعالجة (Edge Gateway)</h3>
-            <p style="font-size:13px;color:var(--color-graphite);margin-top:4px;">
-              لوحة Raspberry Pi 3 Model B+ في النموذج المخبري، وترتقي إلى ESP32-S3 PLC في النسخة الميدانية.
+            <div style="margin-top:10px;"><span class="mint-status-badge" data-ar="★ صورة فعلية من المخبر" data-fr="★ Photo Réelle Labo" data-en="★ Real Lab Photo">★ صورة فعلية من المخبر</span></div>
+            <h3 style="font-size:16px;font-weight:800;margin-top:8px;" data-ar="1. حساس تدفق المياه (Water Flow YF-S201C)" data-fr="1. Capteur de Débit d'Eau (YF-S201C)" data-en="1. Water Flow Sensor (Model YF-S201C)">1. حساس تدفق المياه (Water Flow YF-S201C)</h3>
+            <p style="font-size:13px;color:var(--color-graphite);margin-top:4px;" data-ar="يقيس معدل التدفق الفعلي (1–30 L/min) وضغط المياه (حتى 1.75 MPa) لكشف أي انسداد أو تسرب في أنابيب المحور لحظياً." data-fr="Mesure le débit réel (1–30 L/min) et la pression (≤1.75 MPa) pour détecter toute fuite ou colmatage." data-en="Measures real-time flow rate (1–30 L/min) and water pressure (≤1.75 MPa) to detect pipe leaks or nozzle blockages.">
+              يقيس معدل التدفق الفعلي (1–30 L/min) وضغط المياه (حتى 1.75 MPa) لكشف أي انسداد أو تسرب في أنابيب المحور لحظياً.
             </p>
           </div>
-          <button type="button" class="source-path-badge" data-copy-text="assets/images/components/raspberry-pi.png" data-copy-label="مسار صورة المعالج">
-            <span>assets/images/components/raspberry-pi.png</span>
-            <span>📋</span>
+          <button type="button" class="source-path-badge" data-copy-text="assets/images/components/water-flow-sensor.jpg">
+            <span>assets/images/components/water-flow-sensor.jpg</span><span>📋</span>
           </button>
         </div>
 
-        <!-- Slot 2 -->
-        <!-- [SOURCE SLOT 02] استبدل الصورة في المسار: assets/images/components/soil-moisture-sensor.png -->
-        <div class="component-slot-card">
+        <!-- NEW REAL PHOTO 2: Dual Water Flow Sensor Assembly -->
+        <div class="component-slot-card" style="border:2px solid #0284c7;">
           <div>
-            <div class="component-img-box">
-              <img src="assets/images/components/soil-moisture-sensor.png" alt="حساس رطوبة التربة">
+            <div class="component-img-box" style="background:#041c32;">
+              <img src="assets/images/components/water-flow-sensor-top.jpg" alt="Dual Water Flow Sensor Assembly">
             </div>
-            <h3 style="font-size:16.5px;font-weight:800;margin-top:12px;">2. حساس رطوبة التربة (Soil Probe)</h3>
-            <p style="font-size:13px;color:var(--color-graphite);margin-top:4px;">
-              حساس YL-69 في النموذج الأولي، ومجس سعوي RS-485 يقيس الرطوبة والملوحة (VWC/EC) في الحقل.
+            <div style="margin-top:10px;"><span class="mint-status-badge" data-ar="★ صورة فعلية من المخبر" data-fr="★ Photo Réelle Labo" data-en="★ Real Lab Photo">★ صورة فعلية من المخبر</span></div>
+            <h3 style="font-size:16px;font-weight:800;margin-top:8px;" data-ar="2. منظومة قياس التدفق المزدوجة (Hall-Effect Flow)" data-fr="2. Double Débitmètre à Effet Hall" data-en="2. Dual Hall-Effect Flow Meter Assembly">2. منظومة قياس التدفق المزدوجة (Hall-Effect Flow)</h3>
+            <p style="font-size:13px;color:var(--color-graphite);margin-top:4px;" data-ar="معايرة نبضات التدفق المائي في المخبر لربطها بحساب الكمية الدقيقة الموزعة بالمتر المكعب لكل قطاع." data-fr="Calibration au laboratoire des impulsions de débit pour quantifier le volume exact distribué par secteur." data-en="Lab-calibrated pulse flow meters verifying exact water volume delivered per irrigated sector.">
+              معايرة نبضات التدفق المائي في المخبر لربطها بحساب الكمية الدقيقة الموزعة بالمتر المكعب لكل قطاع.
             </p>
           </div>
-          <button type="button" class="source-path-badge" data-copy-text="assets/images/components/soil-moisture-sensor.png" data-copy-label="مسار حساس التربة">
-            <span>assets/images/components/soil-moisture-sensor.png</span>
-            <span>📋</span>
+          <button type="button" class="source-path-badge" data-copy-text="assets/images/components/water-flow-sensor-top.jpg">
+            <span>assets/images/components/water-flow-sensor-top.jpg</span><span>📋</span>
           </button>
         </div>
 
-        <!-- Slot 3 -->
-        <!-- [SOURCE SLOT 03] استبدل الصورة في المسار: assets/images/components/dht22-sensor.png -->
-        <div class="component-slot-card">
+        <!-- NEW REAL PHOTO 3: Photovoltaic Solar Cell & Charge Controller -->
+        <div class="component-slot-card" style="border:2px solid #16a34a;">
           <div>
-            <div class="component-img-box">
-              <img src="assets/images/components/dht22-sensor.png" alt="حساس الحرارة والرطوبة الجوية DHT22">
+            <div class="component-img-box" style="background:#041c32;">
+              <img src="assets/images/components/solar-cell-lab.jpg" alt="Solar Panel Cell and Charge Controller in Lab">
             </div>
-            <h3 style="font-size:16.5px;font-weight:800;margin-top:12px;">3. حساس المناخ والحرارة (DHT-22)</h3>
-            <p style="font-size:13px;color:var(--color-graphite);margin-top:4px;">
-              يقيس درجة حرارة الهواء والرطوبة النسبية لحساب معامل البخر-نتح اللحظي ($ET_0$) في الحقل.
+            <div style="margin-top:10px;"><span class="mint-status-badge" data-ar="★ صورة فعلية من المخبر" data-fr="★ Photo Réelle Labo" data-en="★ Real Lab Photo">★ صورة فعلية من المخبر</span></div>
+            <h3 style="font-size:16px;font-weight:800;margin-top:8px;" data-ar="3. اللوح الشمسي ومنظم الشحن (Solar + PWM/MPPT)" data-fr="3. Panneau Solaire &amp; Régulateur de Charge" data-en="3. Photovoltaic Solar Panel &amp; Charge Controller">3. اللوح الشمسي ومنظم الشحن (Solar + PWM/MPPT)</h3>
+            <p style="font-size:13px;color:var(--color-graphite);margin-top:4px;" data-ar="خلية الطاقة الشمسية الفعلية مع منظم الشحن لتغذية عقد الاستشعار ولوحة التحكم باستقلالية تامة في الصحراء." data-fr="Cellule photovoltaïque réelle et régulateur assurant l'autonomie énergétique complète au Sahara." data-en="Real photovoltaic module and charge controller providing 100% off-grid solar autonomy in desert fields.">
+              خلية الطاقة الشمسية الفعلية مع منظم الشحن لتغذية عقد الاستشعار ولوحة التحكم باستقلالية تامة في الصحراء.
             </p>
           </div>
-          <button type="button" class="source-path-badge" data-copy-text="assets/images/components/dht22-sensor.png" data-copy-label="مسار حساس DHT22">
-            <span>assets/images/components/dht22-sensor.png</span>
-            <span>📋</span>
+          <button type="button" class="source-path-badge" data-copy-text="assets/images/components/solar-cell-lab.jpg">
+            <span>assets/images/components/solar-cell-lab.jpg</span><span>📋</span>
           </button>
         </div>
 
-        <!-- Slot 4 -->
-        <!-- [SOURCE SLOT 04] استبدل الصورة في المسار: assets/images/components/wind-sensor.png -->
-        <div class="component-slot-card">
+        <!-- NEW REAL PHOTO 4: Aluminum Mechanical Prototype Structure -->
+        <div class="component-slot-card" style="border:2px solid #f59e0b;">
           <div>
-            <div class="component-img-box">
-              <img src="assets/images/components/wind-sensor.png" alt="حساس سرعة الرياح Anemometer">
+            <div class="component-img-box" style="background:#ffffff;">
+              <img src="assets/images/prototype/aluminum-pivot-dimensions.jpg" alt="Aluminum Mechanical Pivot Prototype">
             </div>
-            <h3 style="font-size:16.5px;font-weight:800;margin-top:12px;">4. مقياس سرعة الرياح (Anemometer)</h3>
-            <p style="font-size:13px;color:var(--color-graphite);margin-top:4px;">
-              يرصد سرعة الرياح والزوابع الرملية لإيقاف الضخ آلياً عند تجاوز عتبة 45 كم/ساعة ومنع تطاير المياه.
+            <div style="margin-top:10px;"><span class="mint-status-badge" data-ar="★ هيكل فعلي (420×250×150mm)" data-fr="★ Châssis Réel (420×250×150mm)" data-en="★ Real Truss (420×250×150mm)">★ هيكل فعلي (420×250×150mm)</span></div>
+            <h3 style="font-size:16px;font-weight:800;margin-top:8px;" data-ar="4. الهيكل الميكانيكي المصنع من الألومنيوم" data-fr="4. Structure Mécanique en Aluminium" data-en="4. Fabricated Aluminum Pivot Truss &amp; Drive Base">4. الهيكل الميكانيكي المصنع من الألومنيوم</h3>
+            <p style="font-size:13px;color:var(--color-graphite);margin-top:4px;" data-ar="ذراع الجمالون الميكانيكي (420mm + 250mm) وبرج القيادة المتحرك بارتفاع 150mm وعرض 140mm." data-fr="Bras mécanique en aluminium (420mm + 250mm) et tour motrice sur roues (hauteur 150mm, largeur 140mm)." data-en="Engineered aluminum truss span (420mm + 250mm) and motorized wheeled drive tower (150mm height, 140mm width).">
+              ذراع الجمالون الميكانيكي (420mm + 250mm) وبرج القيادة المتحرك بارتفاع 150mm وعرض 140mm.
             </p>
           </div>
-          <button type="button" class="source-path-badge" data-copy-text="assets/images/components/wind-sensor.png" data-copy-label="مسار حساس الرياح">
-            <span>assets/images/components/wind-sensor.png</span>
-            <span>📋</span>
+          <button type="button" class="source-path-badge" data-copy-text="assets/images/prototype/aluminum-pivot-dimensions.jpg">
+            <span>assets/images/prototype/aluminum-pivot-dimensions.jpg</span><span>📋</span>
           </button>
         </div>
 
-        <!-- Slot 5 -->
-        <!-- [SOURCE SLOT 05] استبدل الصورة في المسار: assets/images/components/rain-sensor.png -->
+        <!-- Component 5: Edge Gateway -->
         <div class="component-slot-card">
           <div>
             <div class="component-img-box">
-              <img src="assets/images/components/rain-sensor.png" alt="حساس المطر Rain Sensor">
+              <img src="assets/images/components/raspberry-pi.png" alt="Raspberry Pi / ESP32 Gateway">
             </div>
-            <h3 style="font-size:16.5px;font-weight:800;margin-top:12px;">5. حساس هطول الأمطار (Rain Sensor)</h3>
-            <p style="font-size:13px;color:var(--color-graphite);margin-top:4px;">
-              يكتشف الزخات المطرية المفاجئة لفصل مضخة الري فوراً وتفادي التشبع المائي وهدر الطاقة.
+            <h3 style="font-size:16px;font-weight:800;margin-top:12px;" data-ar="5. وحدة المعالجة المركزية (Raspberry Pi / ESP32)" data-fr="5. Unité Centrale (Raspberry Pi / ESP32-S3)" data-en="5. Edge Processing Unit (Raspberry Pi / ESP32-S3)">5. وحدة المعالجة المركزية (Raspberry Pi / ESP32)</h3>
+            <p style="font-size:13px;color:var(--color-graphite);margin-top:4px;" data-ar="تعالج قراءات الحساسات وتحسب معادلة البخر-نتح وترسل أوامر التشغيل للسحابة وقواطع المحرك." data-fr="Traite les données capteurs, calcule l'ET0 et pilote les relais moteurs et le Cloud." data-en="Processes sensor telemetry, computes real-time ET0, and actuates motor relays and cloud sync.">
+              تعالج قراءات الحساسات وتحسب معادلة البخر-نتح وترسل أوامر التشغيل للسحابة وقواطع المحرك.
             </p>
           </div>
-          <button type="button" class="source-path-badge" data-copy-text="assets/images/components/rain-sensor.png" data-copy-label="مسار حساس المطر">
-            <span>assets/images/components/rain-sensor.png</span>
-            <span>📋</span>
+          <button type="button" class="source-path-badge" data-copy-text="assets/images/components/raspberry-pi.png">
+            <span>assets/images/components/raspberry-pi.png</span><span>📋</span>
           </button>
         </div>
 
-        <!-- Slot 6 -->
-        <!-- [SOURCE SLOT 06] استبدل الصورة في المسار: assets/images/components/water-pump.png -->
+        <!-- Component 6: Soil Moisture Sensor -->
         <div class="component-slot-card">
           <div>
             <div class="component-img-box">
-              <img src="assets/images/components/water-pump.png" alt="مضخة المياه Water Pump">
+              <img src="assets/images/components/soil-moisture-sensor.png" alt="Soil Moisture Probe">
             </div>
-            <h3 style="font-size:16.5px;font-weight:800;margin-top:12px;">6. مضخة الضخ والتدفق (Water Pump)</h3>
-            <p style="font-size:13px;color:var(--color-graphite);margin-top:4px;">
-              تمثل وحدة الضخ المائي التي يتحكم فيها النظام عبر المرحلات ومغير السرعة التناسبي.
+            <h3 style="font-size:16px;font-weight:800;margin-top:12px;" data-ar="6. مجس رطوبة وملوحة التربة (Soil VWC/EC)" data-fr="6. Sonde d'Humidité &amp; Salinité du Sol" data-en="6. Soil Moisture &amp; Salinity Probe (VWC/EC)">6. مجس رطوبة وملوحة التربة (Soil VWC/EC)</h3>
+            <p style="font-size:13px;color:var(--color-graphite);margin-top:4px;" data-ar="يقيس الرطوبة الحجمية في منطقة الجذور لمنع الضخ الزائد أو العطش المائي." data-fr="Mesure l'humidité volumétrique racinaire pour éviter le sur-pompage." data-en="Measures root-zone volumetric water content to prevent over-pumping or crop water stress.">
+              يقيس الرطوبة الحجمية في منطقة الجذور لمنع الضخ الزائد أو العطش المائي.
             </p>
           </div>
-          <button type="button" class="source-path-badge" data-copy-text="assets/images/components/water-pump.png" data-copy-label="مسار صورة المضخة">
-            <span>assets/images/components/water-pump.png</span>
-            <span>📋</span>
+          <button type="button" class="source-path-badge" data-copy-text="assets/images/components/soil-moisture-sensor.png">
+            <span>assets/images/components/soil-moisture-sensor.png</span><span>📋</span>
           </button>
         </div>
 
-        <!-- Slot 7 -->
-        <!-- [SOURCE SLOT 07] استبدل الصورة في المسار: assets/images/components/stepper-motor.png -->
+        <!-- Component 7: DHT22 Climate Sensor -->
         <div class="component-slot-card">
           <div>
             <div class="component-img-box">
-              <img src="assets/images/components/stepper-motor.png" alt="محرك الدوران Stepper Motor">
+              <img src="assets/images/components/dht22-sensor.png" alt="DHT22 Temperature Humidity Sensor">
             </div>
-            <h3 style="font-size:16.5px;font-weight:800;margin-top:12px;">7. محرك دوران الأبراج (Drive Motor)</h3>
-            <p style="font-size:13px;color:var(--color-graphite);margin-top:4px;">
-              يتحكم في سرعة وزاوية دوران ذراع المحور لضبط كمية المياه الموزعة لكل قطاع زراعي (VRI).
+            <h3 style="font-size:16px;font-weight:800;margin-top:12px;" data-ar="7. حساس الحرارة والرطوبة الجوية (DHT-22)" data-fr="7. Capteur Climatique Air (DHT-22)" data-en="7. Ambient Temp &amp; Humidity Sensor (DHT-22)">7. حساس الحرارة والرطوبة الجوية (DHT-22)</h3>
+            <p style="font-size:13px;color:var(--color-graphite);margin-top:4px;" data-ar="يرصد حرارة الجو والرطوبة النسبية لتقدير الفاقد الحراري اللحظي." data-fr="Mesure la température ambiante et l'humidité relative du champ." data-en="Monitors micro-climate air temperature and relative humidity for ET0 calculations.">
+              يرصد حرارة الجو والرطوبة النسبية لتقدير الفاقد الحراري اللحظي.
             </p>
           </div>
-          <button type="button" class="source-path-badge" data-copy-text="assets/images/components/stepper-motor.png" data-copy-label="مسار صورة المحرك">
-            <span>assets/images/components/stepper-motor.png</span>
-            <span>📋</span>
+          <button type="button" class="source-path-badge" data-copy-text="assets/images/components/dht22-sensor.png">
+            <span>assets/images/components/dht22-sensor.png</span><span>📋</span>
           </button>
         </div>
 
-        <!-- Slot 8 -->
-        <!-- [SOURCE SLOT 08] استبدل الصورة في المسار: assets/images/components/magnetic-sensor.png -->
+        <!-- Component 8: Wind Anemometer -->
         <div class="component-slot-card">
           <div>
             <div class="component-img-box">
-              <img src="assets/images/components/magnetic-sensor.png" alt="حساس القرب المغناطيسي Magnetic Proximity">
+              <img src="assets/images/components/wind-sensor.png" alt="Wind Speed Anemometer">
             </div>
-            <h3 style="font-size:16.5px;font-weight:800;margin-top:12px;">8. حساس التموضع المغناطيسي (Proximity)</h3>
-            <p style="font-size:13px;color:var(--color-graphite);margin-top:4px;">
-              يحدد وصول ذراع المحور إلى نقاط البداية والنهاية وزوايا القطاعات بدقة عالية.
+            <h3 style="font-size:16px;font-weight:800;margin-top:12px;" data-ar="8. مقياس سرعة الرياح (Wind Anemometer)" data-fr="8. Anémomètre de Vitesse du Vent" data-en="8. Wind Speed Anemometer Interlock">8. مقياس سرعة الرياح (Wind Anemometer)</h3>
+            <p style="font-size:13px;color:var(--color-graphite);margin-top:4px;" data-ar="يفصل الرش آلياً عند هبوب العواصف الرملية التي تتجاوز 45 كم/ساعة." data-fr="Coupe automatiquement l'arrosage lors des vents de sable (>45 km/h)." data-en="Automatically pauses spraying when desert wind speeds exceed the 45 km/h drift threshold.">
+              يفصل الرش آلياً عند هبوب العواصف الرملية التي تتجاوز 45 كم/ساعة.
             </p>
           </div>
-          <button type="button" class="source-path-badge" data-copy-text="assets/images/components/magnetic-sensor.png" data-copy-label="مسار الحساس المغناطيسي">
-            <span>assets/images/components/magnetic-sensor.png</span>
-            <span>📋</span>
+          <button type="button" class="source-path-badge" data-copy-text="assets/images/components/wind-sensor.png">
+            <span>assets/images/components/wind-sensor.png</span><span>📋</span>
           </button>
         </div>
 
-        <!-- Slot 9 -->
-        <!-- [SOURCE SLOT 09] استبدل الصورة في المسار: assets/images/components/ldr-sensor.png -->
+        <!-- Component 9: Rain Sensor -->
         <div class="component-slot-card">
           <div>
             <div class="component-img-box">
-              <img src="assets/images/components/ldr-sensor.png" alt="حساس شدة الإضاءة الشمسية LDR">
+              <img src="assets/images/components/rain-sensor.png" alt="Rain Sensor">
             </div>
-            <h3 style="font-size:16.5px;font-weight:800;margin-top:12px;">9. حساس الإشعاع الشمسي (Photocell LDR)</h3>
-            <p style="font-size:13px;color:var(--color-graphite);margin-top:4px;">
-              يرصد شدة السطوع الشمسي للتمييز بين ذروة الظهيرة الحارقة وفترات السقي الليلي عالي الكفاءة.
+            <h3 style="font-size:16px;font-weight:800;margin-top:12px;" data-ar="9. حساس هطول الأمطار (Rain Cut-off)" data-fr="9. Capteur de Pluie (Arrêt Auto)" data-en="9. Instant Rain Cut-off Sensor">9. حساس هطول الأمطار (Rain Cut-off)</h3>
+            <p style="font-size:13px;color:var(--color-graphite);margin-top:4px;" data-ar="يكتشف الزخات المطرية لإيقاف المضخة فوراً وتوفير 100% من الطاقة." data-fr="Détecte les averses pour arrêter immédiatement la pompe." data-en="Detects rainfall events to immediately disengage pumping and save energy.">
+              يكتشف الزخات المطرية لإيقاف المضخة فوراً وتوفير 100% من الطاقة.
             </p>
           </div>
-          <button type="button" class="source-path-badge" data-copy-text="assets/images/components/ldr-sensor.png" data-copy-label="مسار حساس الإضاءة">
-            <span>assets/images/components/ldr-sensor.png</span>
-            <span>📋</span>
+          <button type="button" class="source-path-badge" data-copy-text="assets/images/components/rain-sensor.png">
+            <span>assets/images/components/rain-sensor.png</span><span>📋</span>
           </button>
         </div>
 
-        <!-- Slot 10 -->
-        <!-- [SOURCE SLOT 10] استبدل الصورة في المسار: assets/images/components/flame-sensor.png -->
+        <!-- Component 10: Water Pump -->
         <div class="component-slot-card">
           <div>
             <div class="component-img-box">
-              <img src="assets/images/components/flame-sensor.png" alt="حساس الحرائق واللهب Flame Sensor">
+              <img src="assets/images/components/water-pump.png" alt="Water Pump Unit">
             </div>
-            <h3 style="font-size:16.5px;font-weight:800;margin-top:12px;">10. حساس الحماية من الحرائق (Flame Sensor)</h3>
-            <p style="font-size:13px;color:var(--color-graphite);margin-top:4px;">
-              يرصد أي اشتعال في المحاصيل الجافة (القمح والشعير وقت الحصاد) لتشغيل رشاشات الطوارئ وإرسال إنذار فوري.
+            <h3 style="font-size:16px;font-weight:800;margin-top:12px;" data-ar="10. مضخة الضخ والتحكم التناسبي" data-fr="10. Pompe d'Irrigation &amp; Variateur" data-en="10. Actuated Water Pump &amp; VFD Control">10. مضخة الضخ والتحكم التناسبي</h3>
+            <p style="font-size:13px;color:var(--color-graphite);margin-top:4px;" data-ar="وحدة الضخ التي يتحكم فيها النظام بالتزامن مع حساس التدفق YF-S201C." data-fr="Unité de pompage pilotée en boucle fermée avec le débitmètre YF-S201C." data-en="Closed-loop water pumping stage synchronized with the YF-S201C flow meter.">
+              وحدة الضخ التي يتحكم فيها النظام بالتزامن مع حساس التدفق YF-S201C.
             </p>
           </div>
-          <button type="button" class="source-path-badge" data-copy-text="assets/images/components/flame-sensor.png" data-copy-label="مسار حساس اللهب">
-            <span>assets/images/components/flame-sensor.png</span>
-            <span>📋</span>
+          <button type="button" class="source-path-badge" data-copy-text="assets/images/components/water-pump.png">
+            <span>assets/images/components/water-pump.png</span><span>📋</span>
           </button>
         </div>
 
-        <!-- Slot 11 -->
-        <!-- [SOURCE SLOT 11] استبدل الصورة في المسار: assets/images/components/solar-power-system.png -->
+        <!-- Component 11: Drive Motor -->
         <div class="component-slot-card">
           <div>
             <div class="component-img-box">
-              <img src="assets/images/components/solar-power-system.png" alt="منظومة التغذية الشمسية والهجينة">
+              <img src="assets/images/components/stepper-motor.png" alt="Tower Drive Motor">
             </div>
-            <h3 style="font-size:16.5px;font-weight:800;margin-top:12px;">11. منظومة التغذية الهجينة (Solar + MPPT)</h3>
-            <p style="font-size:13px;color:var(--color-graphite);margin-top:4px;">
-              اللوح الشمسي، منظم الشحن 12V/24V، والبطارية الاحتياطية مع التبديل الآلي للشبكة الكهربائية.
+            <h3 style="font-size:16px;font-weight:800;margin-top:12px;" data-ar="11. محرك دوران الأبراج (Tower Drive Motor)" data-fr="11. Moteur d'Entraînement des Tours" data-en="11. Wheeled Tower Drive Motor">11. محرك دوران الأبراج (Tower Drive Motor)</h3>
+            <p style="font-size:13px;color:var(--color-graphite);margin-top:4px;" data-ar="يضبط سرعة دوران ذراع البيفو لتغيير معدل السقي حسب حاجة كل قطاع." data-fr="Ajuste la vitesse de rotation du pivot pour moduler la dose d'eau (VRI)." data-en="Modulates pivot rotation speed to vary water application depth per sector (VRI).">
+              يضبط سرعة دوران ذراع البيفو لتغيير معدل السقي حسب حاجة كل قطاع.
             </p>
           </div>
-          <button type="button" class="source-path-badge" data-copy-text="assets/images/components/solar-power-system.png" data-copy-label="مسار صورة الطاقة الشمسية">
-            <span>assets/images/components/solar-power-system.png</span>
-            <span>📋</span>
+          <button type="button" class="source-path-badge" data-copy-text="assets/images/components/stepper-motor.png">
+            <span>assets/images/components/stepper-motor.png</span><span>📋</span>
           </button>
         </div>
 
-        <!-- Slot 12 -->
-        <!-- [SOURCE SLOT 12] استبدل الصورة في المسار: assets/images/prototype/cad-pivot-tower-base.jpg -->
+        <!-- Component 12: Magnetic Proximity -->
         <div class="component-slot-card">
           <div>
             <div class="component-img-box">
-              <img src="assets/images/prototype/cad-pivot-tower-base.jpg" alt="التصميم الهندسي ثلاثي الأبعاد لقاعدة البرج">
+              <img src="assets/images/components/magnetic-sensor.png" alt="Magnetic Position Sensor">
             </div>
-            <h3 style="font-size:16.5px;font-weight:800;margin-top:12px;">12. هيكل القاعدة المحورية (3D CAD Base)</h3>
-            <p style="font-size:13px;color:var(--color-graphite);margin-top:4px;">
-              التصميم الهندسي ثلاثي الأبعاد لقاعدة ارتكاز المحور وتمرير أنبوب المياه المركزي.
+            <h3 style="font-size:16px;font-weight:800;margin-top:12px;" data-ar="12. حساس التموضع المغناطيسي والزوايا" data-fr="12. Capteur Magnétique de Position" data-en="12. Magnetic Angular Position Sensor">12. حساس التموضع المغناطيسي والزوايا</h3>
+            <p style="font-size:13px;color:var(--color-graphite);margin-top:4px;" data-ar="يرصد زاوية ذراع المحور ونقاط التوقف الآمن بدقة عالية." data-fr="Détecte l'angle exact du bras du pivot et les fins de course." data-en="Tracks exact pivot arm sector angles and end-of-field safety stops.">
+              يرصد زاوية ذراع المحور ونقاط التوقف الآمن بدقة عالية.
             </p>
           </div>
-          <button type="button" class="source-path-badge" data-copy-text="assets/images/prototype/cad-pivot-tower-base.jpg" data-copy-label="مسار صورة تصميم CAD">
-            <span>assets/images/prototype/cad-pivot-tower-base.jpg</span>
-            <span>📋</span>
+          <button type="button" class="source-path-badge" data-copy-text="assets/images/components/magnetic-sensor.png">
+            <span>assets/images/components/magnetic-sensor.png</span><span>📋</span>
+          </button>
+        </div>
+
+        <!-- Component 13: Solar Irradiance LDR -->
+        <div class="component-slot-card">
+          <div>
+            <div class="component-img-box">
+              <img src="assets/images/components/ldr-sensor.png" alt="LDR Solar Sensor">
+            </div>
+            <h3 style="font-size:16px;font-weight:800;margin-top:12px;" data-ar="13. حساس شدة الإشعاع الشمسي (LDR)" data-fr="13. Capteur de Rayonnement Solaire (LDR)" data-en="13. Solar Irradiance Photocell (LDR)">13. حساس شدة الإشعاع الشمسي (LDR)</h3>
+            <p style="font-size:13px;color:var(--color-graphite);margin-top:4px;" data-ar="يفاضل بين ذروة السطوع النهاري وفترات السقي الليلي عالي الكفاءة." data-fr="Optimise l'irrigation nocturne à faible évaporation." data-en="Distinguishes peak midday solar radiation from high-efficiency night irrigation windows.">
+              يفاضل بين ذروة السطوع النهاري وفترات السقي الليلي عالي الكفاءة.
+            </p>
+          </div>
+          <button type="button" class="source-path-badge" data-copy-text="assets/images/components/ldr-sensor.png">
+            <span>assets/images/components/ldr-sensor.png</span><span>📋</span>
+          </button>
+        </div>
+
+        <!-- Component 14: Flame Protection Sensor -->
+        <div class="component-slot-card">
+          <div>
+            <div class="component-img-box">
+              <img src="assets/images/components/flame-sensor.png" alt="Flame Protection Sensor">
+            </div>
+            <h3 style="font-size:16px;font-weight:800;margin-top:12px;" data-ar="14. حساس الحماية من حرائق المحاصيل" data-fr="14. Capteur Anti-Incendie de Récolte" data-en="14. Crop Fire &amp; Flame Safety Sensor">14. حساس الحماية من حرائق المحاصيل</h3>
+            <p style="font-size:13px;color:var(--color-graphite);margin-top:4px;" data-ar="حماية استباقية لحقول القمح والشعير الجافة وقت الحصاد في الصحراء." data-fr="Protection proactive des champs de blé secs contre les incendies." data-en="Proactive fire detection for dry wheat and barley fields during harvest season.">
+              حماية استباقية لحقول القمح والشعير الجافة وقت الحصاد في الصحراء.
+            </p>
+          </div>
+          <button type="button" class="source-path-badge" data-copy-text="assets/images/components/flame-sensor.png">
+            <span>assets/images/components/flame-sensor.png</span><span>📋</span>
           </button>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- Comparison Table: Lab Prototype vs Field Industrial Retrofit -->
-  <section class="section-block">
-    <div class="container">
-      <div class="t1-section-label">ENGINEERING EVOLUTION • مصفوفة الترقية الهندسية</div>
-      <h2 class="section-heading" style="margin-bottom:20px;">مقارنة المكونات بين النموذج المخبري (TRL 3) والنسخة الصناعية للصحراء (TRL 7)</h2>
-      <div class="sdp-table-wrap">
-        <table class="sdp-table">
-          <thead>
-            <tr>
-              <th>النظام الفرعي</th>
-              <th>النموذج الأولي الجامعي (TRL 3 — مخبر ورقلة)</th>
-              <th>النسخة الصناعية الميدانية (TRL 7 — SDP Retrofit Kit)</th>
-              <th>الفائدة التشغيلية في المزارع الصحراوية</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>وحدة المعالجة المركزية</strong></td>
-              <td>Raspberry Pi 3 Model B+ (5V USB)</td>
-              <td>ESP32-S3 Industrial PLC + عزل ضوئي 380V</td>
-              <td>تحمل حرارة 60°C، استهلاك طاقة منخفض بـ 15 مرة، وإقلاع فوري (Real-time RTOS).</td>
-            </tr>
-            <tr>
-              <td><strong>مجسات رطوبة التربة</strong></td>
-              <td>حساس مقاومي YL-69 ثنائي القطب</td>
-              <td>مجس صناعي RS-485 Modbus (VWC + Temp + EC)</td>
-              <td>عدم تآكل الأقطاب بالأملاح الصحراوية وعمر افتراضي يفوق 5 سنوات في الحقل.</td>
-            </tr>
-            <tr>
-              <td><strong>الربط اللاسلكي والاتصال</strong></td>
-              <td>شبكة Wi-Fi محلية (مدى 30 متراً)</td>
-              <td>شبكة LoRaWAN (مدى 5 كم) + شريحة 4G LTE و SMS</td>
-              <td>تغطية كاملة لمحاور بمساحة 50–75 هكتار دون إنترنت أرضي أو كوابل طويلة.</td>
-            </tr>
-            <tr>
-              <td><strong>التحكم في الدوران والضخ</strong></td>
-              <td>محرك خطوي مصغر (Stepper Motor 5V)</td>
-              <td>تعشيق مباشر مع قواطع 380V AC ومغير السرعة VFD</td>
-              <td>توافق فوري مع محاور Valley و Lindsay و Bauer والمحاور المصنعة محلياً.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
   </main>
-
-  <!-- T1 Energy Onyx Depth Footer (#0f0e12) -->
+  <!-- Deep Pivot Navy Footer -->
   <footer class="t1-onyx-footer">
     <div class="container">
       <div class="footer-grid">
         <div>
           <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;">
-            <img src="assets/images/brand/logo-mark.png" alt="SDP Logo" style="width:46px;height:46px;border-radius:10px;background:#f8f5ed;padding:3px;">
+            <img src="assets/images/brand/logo-mark.png" alt="SDP Logo" style="width:52px;height:52px;border-radius:12px;background:#ffffff;padding:3px;border:2px solid #38bdf8;">
             <div>
-              <div style="font-weight:800;font-size:18px;color:#ffffff;">SMART DESERT PIVOT (SDP)</div>
-              <div style="font-size:12px;color:var(--color-mint-signal);">علامة مشروع مبتكر رقم 09072522272 • ورقلة، الجزائر</div>
+              <div style="font-weight:900;font-size:18px;color:#ffffff;">SMART DESERT PIVOT (SDP)</div>
+              <div style="font-size:12px;color:#4ade80;font-weight:700;" data-i18n="footer_sub">مؤسسة ناشئة حاصلة على وسم لابل (Label Projet Innovant) • حاضنة جامعة ورقلة، الجزائر</div>
             </div>
           </div>
-          <p style="font-size:14px;color:#b5b1aa;max-width:420px;line-height:1.7;">
-            منظومة هندسية جزائرية لتحويل وترقية محاور الرش الفلاحية التقليدية في الجنوب الكبير إلى محاور ذكية تعمل بالطاقة الشمسية، حساسات RS-485 الصناعية، وشبكات LoRaWAN بعيدة المدى.
+          <p style="font-size:14px;color:#bae6fd;max-width:430px;line-height:1.7;" data-i18n="footer_desc">
+            منظومة هندسية جزائرية لترقية محاور الرش الفلاحية إلى محاور ذكية تعمل بالطاقة الشمسية، حساسات التدفق والتربة، وشبكات LoRaWAN بعيدة المدى.
           </p>
         </div>
 
         <div>
-          <div class="footer-col-title">أقسام المنصة</div>
+          <div class="footer-col-title" data-i18n="footer_col1">المحاور الأربعة</div>
           <ul class="footer-links">
-            <li><a href="index.html" data-page-target="index.html">بوابة المنظومة المركزية</a></li>
-            <li><a href="technology.html" data-page-target="technology.html">صندوق الترقية والمكونات</a></li>
-            <li><a href="simulator.html" data-page-target="simulator.html">محاكي المحور الحي (Digital Twin)</a></li>
-            <li><a href="calculator.html" data-page-target="calculator.html">حاسبة التوفير المالي والمائي</a></li>
+            <li><a href="index.html" data-page-target="index.html" data-i18n="nav_home">الرئيسية</a></li>
+            <li><a href="technology.html" data-page-target="technology.html" data-i18n="nav_tech">التقنية والعتاد</a></li>
+            <li><a href="simulator.html" data-page-target="simulator.html" data-i18n="nav_hub">بوابة التجربة والنموذج</a></li>
+            <li><a href="contact.html" data-page-target="contact.html" data-i18n="nav_contact">الشراكات والتواصل</a></li>
           </ul>
         </div>
 
         <div>
-          <div class="footer-col-title">الموثوقية والشراكات</div>
+          <div class="footer-col-title" data-i18n="footer_col2">الصفحات التفصيلية</div>
           <ul class="footer-links">
-            <li><a href="pilot.html" data-page-target="pilot.html">النموذج الأولي وتصميم 3D CAD</a></li>
-            <li><a href="partnerships.html" data-page-target="partnerships.html">شراكات مصنعي البيفو واستقطاب الفريق</a></li>
-            <li><a href="about.html" data-page-target="about.html">شهادة علامة مشروع مبتكر</a></li>
-            <li><a href="contact.html" data-page-target="contact.html">طلب معاينة ميدانية للمزرعة</a></li>
+            <li><a href="pilot.html" data-page-target="pilot.html" data-i18n="sub_pilot">النموذج الأولي الفعلي (ألومنيوم + 3D)</a></li>
+            <li><a href="calculator.html" data-page-target="calculator.html" data-i18n="sub_calc">حاسبة التوفير (ROI)</a></li>
+            <li><a href="partnerships.html" data-page-target="partnerships.html" data-i18n="sub_part">شراكات البيفو والفريق</a></li>
+            <li><a href="about.html" data-page-target="about.html" data-i18n="sub_about">هوية المؤسسة ووسم لابل</a></li>
           </ul>
         </div>
 
         <div>
-          <div class="footer-col-title">التواصل المباشر (ورقلة)</div>
-          <ul class="footer-links" style="color:#d6d3cd;font-size:13.5px;">
-            <li><strong>المؤسس:</strong> م. لشهب جعفر (Lecheheb Djaafar)</li>
-            <li><strong>الهاتف / واتساب:</strong> <span class="font-mono" dir="ltr">+213 658 30 14 20</span></li>
-            <li><strong>البريد الرسمي:</strong> <span class="font-mono">lecheheb.djaafar@univ-ouargla.dz</span></li>
-            <li><strong>المقر:</strong> حاضنة أعمال جامعة قاصدي مرباح، ورقلة 30000</li>
+          <div class="footer-col-title" data-i18n="footer_col3">التواصل المباشر (ورقلة)</div>
+          <ul class="footer-links" style="color:#e0f2fe;font-size:13.5px;">
+            <li><strong data-ar="المؤسس:" data-fr="Fondateur :" data-en="Founder:">المؤسس:</strong> Lecheheb Djaafar (م. لشهب جعفر)</li>
+            <li><strong data-ar="الهاتف / واتساب:" data-fr="Tél / WhatsApp :" data-en="Phone / WhatsApp:">الهاتف / واتساب:</strong> <span class="font-mono" dir="ltr">+213 658 30 14 20</span></li>
+            <li><strong data-ar="البريد الرسمي:" data-fr="Email :" data-en="Email:">البريد الرسمي:</strong> <span class="font-mono">lecheheb.djaafar@univ-ouargla.dz</span></li>
+            <li><strong data-ar="المقر:" data-fr="Siège :" data-en="Location:">المقر:</strong> <span data-ar="حاضنة أعمال جامعة قاصدي مرباح، ورقلة 30000" data-fr="Incubateur Univ. Kasdi Merbah, Ouargla 30000" data-en="Kasdi Merbah University Incubator, Ouargla 30000">حاضنة أعمال جامعة قاصدي مرباح، ورقلة 30000</span></li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <div>© 2026–2027 Smart Desert Pivot (SDP) — جميع الحقوق محفوظة. تصميم معماري هجين مستلهم من T1 Energy و Pirsch.</div>
-        <div style="display:flex;gap:16px;">
-          <a href="https://startup.dz/" target="_blank" rel="noopener noreferrer" style="color:var(--color-sunshine-highlight);">بوابة Startup.dz</a>
-          <a href="https://www.linkedin.com/in/lecheheb-djaafar-226594348/" target="_blank" rel="noopener noreferrer" style="color:var(--color-mint-signal);">LinkedIn المؤسس</a>
-          <a href="https://www.youtube.com/@CodeCraftDL" target="_blank" rel="noopener noreferrer" style="color:#ffffff;">قناة فيديو النموذج</a>
+        <div data-ar="© 2026–2027 Smart Desert Pivot (SDP) — منصة استعراضية للمستثمرين والعملاء والشركاء." data-fr="© 2026–2027 Smart Desert Pivot (SDP) — Plateforme Vitrine Investisseurs & Clients." data-en="© 2026–2027 Smart Desert Pivot (SDP) — Investor, Client & Partner Showcase Platform.">© 2026–2027 Smart Desert Pivot (SDP) — منصة استعراضية للمستثمرين والعملاء والشركاء.</div>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;">
+          <a href="https://startup.dz/" target="_blank" rel="noopener noreferrer" style="color:var(--color-sunshine-highlight);font-weight:700;">Startup.dz ↗</a>
+          <a href="https://www.linkedin.com/in/lecheheb-djaafar-226594348/" target="_blank" rel="noopener noreferrer" style="color:#4ade80;font-weight:700;">LinkedIn ↗</a>
+          <a href="https://www.youtube.com/@CodeCraftDL" target="_blank" rel="noopener noreferrer" style="color:#ffffff;font-weight:700;">YouTube Demo ↗</a>
         </div>
       </div>
     </div>
   </footer>
 
+  <!-- Dedicated Smartphone Sticky Bottom App Bar -->
+  <nav class="mobile-bottom-nav" aria-label="Mobile Bottom Navigation">
+    <div class="mobile-bottom-nav-inner">
+      <a href="index.html" data-page-target="index.html" class="mobile-tab-item ">
+        <span class="tab-icon">🏠</span>
+        <span data-i18n="mob_home">الرئيسية</span>
+      </a>
+      <a href="technology.html" data-page-target="technology.html" class="mobile-tab-item active">
+        <span class="tab-icon">⚙️</span>
+        <span data-i18n="mob_tech">العتاد</span>
+      </a>
+      <a href="simulator.html" data-page-target="simulator.html" class="mobile-tab-item ">
+        <span class="tab-icon">🎛️</span>
+        <span data-i18n="mob_hub">النموذج والمحاكي</span>
+      </a>
+      <a href="contact.html" data-page-target="contact.html" class="mobile-tab-item ">
+        <span class="tab-icon">🤝</span>
+        <span data-i18n="mob_contact">تواصل وشراكة</span>
+      </a>
+    </div>
+  </nav>
+
   <!-- Global In-Page Toast Notification -->
   <div id="sdpToast" class="sdp-toast" role="status" aria-live="polite">
-    <div style="font-weight:800;font-size:14px;color:var(--color-sunshine-highlight);" id="sdpToastTitle">إشعار المنظومة</div>
-    <div style="font-size:13px;margin-top:3px;" id="sdpToastMsg">تم تنفيذ الإجراء بنجاح.</div>
+    <div style="font-weight:800;font-size:14px;color:var(--color-sunshine-highlight);" id="sdpToastTitle">SDP</div>
+    <div style="font-size:13px;margin-top:3px;" id="sdpToastMsg">OK</div>
   </div>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
   <script src="js/telemetry-stream.js"></script>
+  
 </body>
 </html>

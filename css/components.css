@@ -1,6 +1,5 @@
 /* ==========================================================================
-   SMART DESERT PIVOT (SDP) — HYBRID COMPONENTS (components.css)
-   Pirsch 1px Hairline Cards + Sunshine CTAs + T1 Portholes & Accordions
+   SMART DESERT PIVOT (SDP) — LOGO-HARMONIZED CARDS, DIAMOND HUB & BUTTONS
    ========================================================================== */
 
 /* Buttons */
@@ -9,19 +8,20 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  background-color: var(--color-sunshine-highlight);
-  color: var(--color-ink);
-  border: var(--border-ink);
+  background: var(--gradient-solar-cta);
+  color: #041c32;
+  border: 1px solid #f59e0b;
   border-radius: var(--radius-pills);
   padding: 13px 24px;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 14.5px;
+  box-shadow: 0 6px 18px rgba(245, 158, 11, 0.28);
   transition: var(--transition-fast);
 }
 
 .btn-sunshine:hover {
-  background-color: var(--color-sunshine-hover);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(245, 158, 11, 0.4);
 }
 
 .btn-carbon {
@@ -29,18 +29,20 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  background-color: var(--color-carbon-warm);
-  color: var(--color-paper-white);
-  border: 1px solid var(--color-carbon-warm);
+  background: linear-gradient(135deg, #0284c7 0%, #062847 100%);
+  color: #ffffff;
+  border: 1px solid rgba(56, 189, 248, 0.4);
   border-radius: var(--radius-pills);
   padding: 13px 24px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 14.5px;
+  box-shadow: 0 6px 18px rgba(2, 132, 199, 0.22);
   transition: var(--transition-fast);
 }
 
 .btn-carbon:hover {
-  background-color: var(--color-ink);
+  background: linear-gradient(135deg, #16a34a 0%, #0284c7 100%);
+  transform: translateY(-2px);
 }
 
 .btn-ghost-ink {
@@ -48,52 +50,127 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  background-color: transparent;
-  color: var(--color-ink);
-  border: var(--border-ink);
+  background-color: var(--color-paper-white);
+  color: var(--color-water-blue);
+  border: 1.5px solid var(--color-water-blue);
   border-radius: var(--radius-pills);
-  padding: 13px 24px;
-  font-weight: 600;
+  padding: 12px 22px;
+  font-weight: 700;
   font-size: 14.5px;
   transition: var(--transition-fast);
 }
 
 .btn-ghost-ink:hover {
-  background-color: var(--color-carbon-warm);
-  color: var(--color-paper-white);
+  background-color: var(--color-water-blue);
+  color: #ffffff;
 }
 
-/* Pirsch Feature Card (Cream Paper + 24px radius + 1px solid Ink border, Zero Shadow) */
+/* Feature Cards */
 .pirsch-card {
-  background-color: var(--color-cream-paper);
-  border: var(--border-ink);
+  background: linear-gradient(180deg, #ffffff 0%, #eaf4fb 100%);
+  border: var(--border-hairline);
   border-radius: var(--radius-cards);
   padding: var(--spacing-32);
+  box-shadow: var(--shadow-card);
   transition: var(--transition-fast);
+}
+
+.pirsch-card:hover {
+  border-color: var(--color-water-blue);
+  box-shadow: var(--shadow-elevated);
 }
 
 .pirsch-card-white {
   background-color: var(--color-paper-white);
-  border: var(--border-ink);
+  border: var(--border-hairline);
   border-radius: var(--radius-cards);
   padding: var(--spacing-32);
+  box-shadow: var(--shadow-card);
 }
 
 .pirsch-card-dark {
-  background-color: var(--color-onyx-depth);
-  color: var(--color-vellum);
-  border: 1px solid var(--color-carbon-warm);
+  background: linear-gradient(145deg, #041c32 0%, #062847 65%, #083c5d 100%);
+  color: #f0f9ff;
+  border: 1px solid rgba(56, 189, 248, 0.3);
   border-radius: var(--radius-cards);
   padding: var(--spacing-32);
+  box-shadow: 0 18px 40px -12px rgba(4, 28, 50, 0.4);
 }
 
-/* T1 Energy Porthole Image Container */
+/* 4-Diamond Interactive Showcase Portal Grid */
+.diamond-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.diamond-portal-card {
+  position: relative;
+  background: #ffffff;
+  border: 2px solid rgba(2, 132, 199, 0.2);
+  border-radius: 26px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px;
+  box-shadow: var(--shadow-card);
+  transition: var(--transition-fast);
+  overflow: hidden;
+}
+
+.diamond-portal-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, #0284c7, #16a34a, #fbbf24);
+}
+
+.diamond-portal-card:hover {
+  transform: translateY(-4px);
+  border-color: #0284c7;
+  box-shadow: var(--shadow-elevated);
+}
+
+.diamond-badge-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.diamond-shape-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  transform: rotate(45deg);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0284c7 0%, #15803d 100%);
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(2, 132, 199, 0.25);
+  flex-shrink: 0;
+  margin: 6px;
+}
+
+.diamond-shape-icon span {
+  transform: rotate(-45deg);
+  font-size: 22px;
+  font-weight: 800;
+}
+
+/* Porthole & Image Containers */
 .t1-porthole-frame {
   border-radius: var(--radius-porthole);
   overflow: hidden;
-  border: var(--border-ink);
+  border: 3px solid rgba(2, 132, 199, 0.35);
   background-color: var(--color-carbon-warm);
   position: relative;
+  box-shadow: var(--shadow-elevated);
 }
 
 .t1-porthole-frame img {
@@ -102,10 +179,9 @@
   object-fit: cover;
 }
 
-/* Pirsch Printed-on-Paper Image Frame (12px radius + 1px ink border) */
 .pirsch-image-frame {
   border-radius: var(--radius-images);
-  border: var(--border-ink);
+  border: var(--border-hairline);
   overflow: hidden;
   background-color: var(--color-paper-white);
 }
@@ -113,20 +189,27 @@
 /* Component Source-Code Slot Card */
 .component-slot-card {
   background-color: var(--color-paper-white);
-  border: var(--border-ink);
+  border: var(--border-hairline);
   border-radius: var(--radius-cards);
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 14px;
+  box-shadow: var(--shadow-card);
+  transition: var(--transition-fast);
+}
+
+.component-slot-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--color-water-blue);
 }
 
 .component-img-box {
-  height: 170px;
-  border-radius: 12px;
-  border: 1px dashed var(--color-carbon-warm);
-  background-color: var(--color-cream-paper);
+  height: 175px;
+  border-radius: 14px;
+  border: 1px dashed rgba(2, 132, 199, 0.4);
+  background: linear-gradient(180deg, #f8fcff 0%, #eaf4fb 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -136,9 +219,10 @@
 }
 
 .component-img-box img {
-  max-height: 145px;
+  max-height: 150px;
   width: auto;
   object-fit: contain;
+  border-radius: 8px;
 }
 
 .source-path-badge {
@@ -146,10 +230,10 @@
   align-items: center;
   justify-content: space-between;
   gap: 6px;
-  background-color: var(--color-vellum);
-  border: 1px solid var(--color-carbon-warm);
-  border-radius: 6px;
-  padding: 5px 10px;
+  background-color: #f0f7fc;
+  border: 1px solid rgba(2, 132, 199, 0.25);
+  border-radius: 8px;
+  padding: 6px 10px;
   font-family: var(--font-mono);
   font-size: 11px;
   color: var(--color-carbon-warm);
@@ -158,7 +242,7 @@
   width: 100%;
 }
 
-/* Pirsch Filter Tag Pills */
+/* Filter Tag Pills */
 .filter-tag-row {
   display: flex;
   flex-wrap: wrap;
@@ -167,9 +251,9 @@
 
 .filter-pill {
   border-radius: var(--radius-tags);
-  background-color: var(--color-cream-paper);
-  border: var(--border-ink);
-  padding: 8px 16px;
+  background-color: var(--color-paper-white);
+  border: 1px solid rgba(2, 132, 199, 0.3);
+  padding: 9px 16px;
   font-size: 13px;
   font-weight: 700;
   color: var(--color-ink);
@@ -180,15 +264,18 @@
 }
 
 .filter-pill:hover {
-  background-color: var(--color-sunshine-highlight);
+  background-color: var(--color-hydro-soft);
+  border-color: var(--color-water-blue);
 }
 
 .filter-pill.active {
-  background-color: var(--color-ink);
-  color: var(--color-cream-paper);
+  background: linear-gradient(135deg, #0284c7 0%, #15803d 100%);
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
 }
 
-/* T1 Energy Expandable Accordion */
+/* Expandable Accordion */
 .t1-accordion-list {
   border-top: var(--border-hairline);
 }
@@ -199,14 +286,14 @@
 
 .t1-accordion-trigger {
   width: 100%;
-  padding: 20px 4px;
+  padding: 20px 8px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  text-align: right;
-  font-size: 19px;
-  font-weight: 700;
+  text-align: start;
+  font-size: 18.5px;
+  font-weight: 800;
   color: var(--color-ink);
 }
 
@@ -214,28 +301,31 @@
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  border: var(--border-ink);
+  border: 1px solid rgba(2, 132, 199, 0.35);
   background-color: var(--color-paper-white);
+  color: var(--color-water-blue);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   font-family: var(--font-mono);
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 800;
   flex-shrink: 0;
   transition: var(--transition-fast);
 }
 
 .t1-accordion-item.open .t1-accordion-circle {
-  background-color: var(--color-sunshine-highlight);
+  background: var(--gradient-solar-cta);
+  color: #041c32;
+  border-color: #f59e0b;
 }
 
 .t1-accordion-body {
   display: none;
-  padding: 0 4px 22px 4px;
+  padding: 0 8px 22px 8px;
   color: var(--color-graphite);
   font-size: 15.5px;
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
 .t1-accordion-item.open .t1-accordion-body {
@@ -246,29 +336,30 @@
 .sdp-table-wrap {
   width: 100%;
   overflow-x: auto;
-  border: var(--border-ink);
+  border: var(--border-hairline);
   border-radius: var(--radius-images);
   background-color: var(--color-paper-white);
+  box-shadow: var(--shadow-card);
 }
 
 .sdp-table {
   width: 100%;
   border-collapse: collapse;
-  text-align: right;
+  text-align: start;
   font-size: 14.5px;
 }
 
 .sdp-table th {
-  background-color: var(--color-carbon-warm);
-  color: var(--color-paper-white);
+  background: linear-gradient(90deg, #062847 0%, #0284c7 100%);
+  color: #ffffff;
   padding: 14px 16px;
-  font-weight: 700;
-  border-bottom: var(--border-ink);
+  font-weight: 800;
+  border-bottom: var(--border-hairline);
 }
 
 .sdp-table td {
   padding: 13px 16px;
-  border-bottom: 1px solid rgba(50, 45, 42, 0.15);
+  border-bottom: 1px solid rgba(2, 132, 199, 0.12);
   color: var(--color-ink);
 }
 
@@ -277,7 +368,7 @@
 }
 
 .sdp-table tr:nth-child(even) td {
-  background-color: var(--color-cream-paper);
+  background-color: #f4f9fd;
 }
 
 /* Status Dot Badge */
@@ -285,43 +376,47 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background-color: var(--color-mint-signal);
-  color: var(--color-ink);
-  border: var(--border-ink);
+  background-color: #dcfce7;
+  color: #14532d;
+  border: 1px solid #22c55e;
   border-radius: var(--radius-tags);
   padding: 4px 12px;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 /* Form Controls */
 .sdp-input, .sdp-select, .sdp-textarea {
   width: 100%;
   background-color: var(--color-paper-white);
-  border: var(--border-ink);
+  border: 1.5px solid rgba(2, 132, 199, 0.3);
   border-radius: var(--radius-inputs);
   padding: 11px 14px;
   font-size: 15px;
   color: var(--color-ink);
+  transition: var(--transition-fast);
 }
 
 .sdp-input:focus, .sdp-select:focus, .sdp-textarea:focus {
-  outline: 2px solid var(--color-sunshine-highlight);
+  outline: none;
+  border-color: var(--color-water-blue);
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.18);
 }
 
 /* Toast Notification */
 .sdp-toast {
   position: fixed;
-  bottom: 24px;
+  bottom: 88px;
   left: 24px;
   z-index: 999;
-  background-color: var(--color-carbon-warm);
-  color: var(--color-paper-white);
-  border: 2px solid var(--color-sunshine-highlight);
+  background: #041c32;
+  color: #ffffff;
+  border: 2px solid #38bdf8;
   border-radius: 16px;
   padding: 14px 20px;
   max-width: 380px;
-  transform: translateY(150%);
+  box-shadow: 0 14px 30px rgba(4, 28, 50, 0.45);
+  transform: translateY(200%);
   transition: transform 0.3s ease;
 }
 

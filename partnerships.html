@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>شراكات مصنعي البيفو (OEM) واستقطاب فريق المؤسسة الناشئة | Smart Desert Pivot (SDP)</title>
+  <title>شراكات مصنعي البيفو واستقطاب الفريق | Smart Desert Pivot (SDP)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@500;700&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
@@ -16,229 +16,218 @@
 </head>
 <body>
 
-  <!-- Top Sovereign Algerian Accreditation Banner -->
+  <!-- Top Sovereign Startup Banner + Language Switcher (AR / FR / EN) + Dedicated Mobile Mode -->
   <div class="sovereign-topbar">
     <div class="sovereign-topbar-inner">
       <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
-        <span class="label-pill-tag">★ علامة مشروع مبتكر معتمد</span>
-        <span>الجمهورية الجزائرية الديمقراطية الشعبية • رقم القرار الوزاري: <strong class="font-mono" style="color:var(--color-sunshine-highlight);">09072522272</strong> (حاضنة جامعة قاصدي مرباح ورقلة)</span>
+        <span class="label-pill-tag" data-i18n="topbar_badge">★ مؤسسة ناشئة حاصلة على وسم لابل (Label Projet Innovant)</span>
+        <span data-i18n="topbar_desc">منصة استعراضية للمستثمرين والعملاء والشركاء الصناعيين • حاضنة جامعة قاصدي مرباح ورقلة — الجزائر</span>
       </div>
-      <div style="display:flex;align-items:center;gap:14px;">
-        <span class="font-mono live-clock-val" style="font-size:12px;color:#b5b1aa;">09:00:00 (توقيت الجزائر)</span>
-        <a href="about.html" data-page-target="about.html" style="color:var(--color-mint-signal);font-weight:700;text-decoration:underline;">وثيقة الاعتماد الرسمي ←</a>
+      <div class="topbar-controls">
+        <div class="lang-switcher" role="group" aria-label="Language Switcher">
+          <button type="button" class="lang-btn active" data-lang-switch="ar">العربية</button>
+          <button type="button" class="lang-btn" data-lang-switch="fr">FR</button>
+          <button type="button" class="lang-btn" data-lang-switch="en">EN</button>
+        </div>
+        <a href="about.html" data-page-target="about.html" data-i18n="topbar_cert_link" style="color:#fbbf24;font-weight:800;text-decoration:underline;font-size:12px;">بطاقة الاعتماد والهوية ←</a>
       </div>
     </div>
   </div>
 
-  <!-- T1 Energy Signature Floating Carbon Warm Pill Navigation -->
+  <!-- Clean 4-Pillar Showcase Navigation Bar -->
   <header class="site-header-wrap">
     <nav class="t1-pill-navbar" aria-label="التنقل الرئيسي">
       <a href="index.html" data-page-target="index.html" class="brand-lockup">
-        <img src="assets/images/brand/logo-mark.png" alt="شعار Smart Desert Pivot" class="brand-logo-img">
+        <img src="assets/images/brand/logo-mark.png" alt="Smart Desert Pivot Logo" class="brand-logo-img">
         <div>
           <div class="brand-title">
             <span>SMART DESERT PIVOT</span>
-            <span style="font-size:11px;background:var(--color-sunshine-highlight);color:var(--color-ink);padding:1px 7px;border-radius:99px;font-weight:800;">SDP</span>
+            <span style="font-size:11px;background:var(--gradient-solar-cta);color:#041c32;padding:1px 8px;border-radius:99px;font-weight:900;">SDP</span>
           </div>
-          <div class="brand-subtitle">أنظمة الري المحوري الذكي للصحراء الجزائرية</div>
+          <div class="brand-subtitle" data-i18n="brand_subtitle">أنظمة الري المحوري الذكي والطاقة الشمسية للصحراء الجزائرية</div>
         </div>
       </a>
 
-      <button type="button" class="mobile-menu-toggle" aria-label="فتح القائمة">☰ القائمة</button>
+      <button type="button" class="mobile-menu-toggle" aria-label="فتح القائمة" data-i18n="menu_btn">☰ القائمة</button>
 
+      <!-- Strictly 4 Professional Showcase Pillars in the Top Navbar -->
       <ul class="nav-links-list">
-        <li><a href="index.html" class="nav-link-item" data-page-target="index.html"><span>الرئيسية</span></a></li>
-          <li><a href="technology.html" class="nav-link-item" data-page-target="technology.html"><span>صندوق الترقية والمكونات</span></a></li>
-          <li><a href="simulator.html" class="nav-link-item" data-page-target="simulator.html"><span class="nav-live-dot"></span><span>محاكي المحور الحي</span></a></li>
-          <li><a href="calculator.html" class="nav-link-item" data-page-target="calculator.html"><span>حاسبة التوفير (ROI)</span></a></li>
-          <li><a href="pilot.html" class="nav-link-item" data-page-target="pilot.html"><span>النموذج الأولي و 3D CAD</span></a></li>
-          <li><a href="partnerships.html" class="nav-link-item active" data-page-target="partnerships.html"><span>شراكات البيفو والفريق</span></a></li>
-          <li><a href="about.html" class="nav-link-item" data-page-target="about.html"><span>الاعتماد الوزاري</span></a></li>
-          <li><a href="contact.html" class="nav-link-item" data-page-target="contact.html"><span>تواصل ومعاينة</span></a></li>
+        <li><a href="index.html" class="nav-link-item " data-page-target="index.html"><span data-i18n="nav_home">الرئيسية</span></a></li>
+        <li><a href="technology.html" class="nav-link-item " data-page-target="technology.html"><span data-i18n="nav_tech">التقنية والعتاد</span></a></li>
+        <li><a href="simulator.html" class="nav-link-item " data-page-target="simulator.html"><span class="nav-live-dot"></span><span data-i18n="nav_hub">بوابة التجربة والنموذج</span></a></li>
+        <li><a href="contact.html" class="nav-link-item active" data-page-target="contact.html"><span data-i18n="nav_contact">الشراكات والتواصل</span></a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Main Page Content -->
+  <!-- Sub-Hub Explorer Bar: Preserves All 8 Pages without Cluttering the Main Navbar -->
+  <div class="subhub-bar">
+    <div class="subhub-inner">
+      <span class="subhub-label" data-i18n="subhub_explore_label">🧭 التنقل السريع بين الصفحات التفصيلية:</span>
+      <div class="subhub-pills">
+        <a href="index.html" data-page-target="index.html" class="subhub-pill" data-i18n="sub_index">1. العرض التنفيذي</a>
+        <a href="technology.html" data-page-target="technology.html" class="subhub-pill" data-i18n="sub_tech">2. العتاد والحساسات (14)</a>
+        <a href="simulator.html" data-page-target="simulator.html" class="subhub-pill" data-i18n="sub_sim">3. المحاكي التفاعلي الحي</a>
+        <a href="pilot.html" data-page-target="pilot.html" class="subhub-pill" data-i18n="sub_pilot">4. النموذج الأولي الفعلي (ألومنيوم + 3D)</a>
+        <a href="calculator.html" data-page-target="calculator.html" class="subhub-pill" data-i18n="sub_calc">5. حاسبة التوفير (ROI)</a>
+        <a href="partnerships.html" data-page-target="partnerships.html" class="subhub-pill active" data-i18n="sub_part">6. شراكات البيفو والفريق</a>
+        <a href="about.html" data-page-target="about.html" class="subhub-pill" data-i18n="sub_about">7. هوية المؤسسة ووسم لابل</a>
+        <a href="contact.html" data-page-target="contact.html" class="subhub-pill" data-i18n="sub_contact">8. حجز معاينة وتواصل</a>
+      </div>
+    </div>
+  </div>
   <main>
-
-  <section class="section-block" style="padding-top:36px;">
+  <section class="section-block" style="padding-top:32px;">
     <div class="container">
       <div class="pirsch-step-badge">
         <span class="step-num">06</span>
-        <span>OEM PARTNERSHIPS &amp; TEAM BUILDING • الشراكات الصناعية واستقطاب الكفاءات</span>
+        <span data-ar="OEM PARTNERSHIPS &amp; TEAM • الشراكات الصناعية واستقطاب الكفاءات" data-fr="PARTENARIATS OEM &amp; ÉQUIPE • Alliances Industrielles &amp; Talents" data-en="OEM PARTNERSHIPS &amp; TEAM • Industrial Alliances &amp; Talent">OEM PARTNERSHIPS &amp; TEAM • الشراكات الصناعية واستقطاب الكفاءات</span>
       </div>
-      <h1 class="display-headline" style="margin-bottom:14px;">
-        نبني تحالفات صناعية مع <strong>مصنعي البيفو</strong> ونستقطب <strong>شركاء النجاح</strong> في الجنوب
+      <h1 class="display-headline" style="margin-bottom:14px;" data-ar="نبني تحالفات صناعية مع <strong>مصنعي البيفو</strong> ونستقطب <strong>شركاء النجاح</strong>" data-fr="Alliances avec les <strong>fabricants de pivots</strong> et recrutement de <strong>co-fondateurs</strong>" data-en="Partnering with <strong>Pivot Manufacturers</strong> &amp; Recruiting <strong>Core Talent</strong>">
+        نبني تحالفات صناعية مع <strong>مصنعي البيفو</strong> ونستقطب <strong>شركاء النجاح</strong>
       </h1>
-      <p class="section-subhead" style="margin-bottom:32px;">
-        ينطلق مشروع Smart Desert Pivot باستراتيجية مرنة وذكية: التعاقد المباشر مع الشركات والورشات التي تصنع هياكل المحاور في الجزائر لتزويدها بالعقل الذكي، وفتح باب الشراكة للمهندسين والتقنيين الطموحين في <strong>ورقلة، الوادي، وبسكرة</strong>.
+      <p class="section-subhead" style="margin-bottom:32px;" data-ar="نقدم لمصنعي ومجمعي هياكل المحاور في الجزائر عقلاً إلكترونياً ذكياً يرفع تنافسية منتجاتهم، ونفتح باب الانضمام للمهندسين والتقنيين في ورقلة والوادي وبسكرة:" data-fr="Nous offrons aux constructeurs nationaux de pivots une solution d'automatisation locale clé en main, et recrutons des profils techniques au Sud :" data-en="We provide domestic pivot builders with an indigenous smart control system while welcoming ambitious engineers in Ouargla, El Oued, and Biskra:">
+        نقدم لمصنعي ومجمعي هياكل المحاور في الجزائر عقلاً إلكترونياً ذكياً يرفع تنافسية منتجاتهم، ونفتح باب الانضمام للمهندسين والتقنيين في ورقلة والوادي وبسكرة:
       </p>
 
-      <!-- OEM Pivot Manufacturers Offer -->
-      <div class="pirsch-card-dark" style="margin-bottom:48px;">
-        <div class="t1-section-label" style="color:var(--color-sunshine-highlight);">OEM PIVOT MANUFACTURERS • عرض خاص لمصنعي ومجمعي المحاور في الجزائر</div>
-        <h2 style="font-size:28px;font-weight:800;color:#ffffff;margin-bottom:14px;">
+      <div class="pirsch-card-dark" style="margin-bottom:44px;">
+        <div class="t1-section-label" style="color:#fbbf24;background:rgba(251,191,36,0.15);" data-ar="OEM PIVOT MANUFACTURERS • عرض خاص لمصنعي ومجمعي المحاور في الجزائر" data-fr="FABRICANTS OEM • Offre dédiée aux constructeurs de pivots en Algérie" data-en="OEM PIVOT MANUFACTURERS • Offer for Algerian Pivot Builders">OEM PIVOT MANUFACTURERS • عرض خاص لمصنعي ومجمعي المحاور في الجزائر</div>
+        <h2 style="font-size:26px;font-weight:800;color:#ffffff;margin-bottom:14px;" data-ar="هل تصنعون أو تركبون هياكل البيفو في بسكرة، الوادي، ورقلة، سطيف أو العاصمة؟" data-fr="Fabriquez-vous ou installez-vous des pivots à Biskra, El Oued, Ouargla ou Sétif ?" data-en="Do You Manufacture or Assemble Center Pivots in Algeria?">
           هل تصنعون أو تركبون هياكل البيفو في بسكرة، الوادي، ورقلة، سطيف أو العاصمة؟
         </h2>
-        <p style="font-size:15.5px;color:#d6d3cd;max-width:820px;margin-bottom:24px;">
-          الورشات والمصانع الوطنية تبدع في تصنيع الهياكل الفولاذية والأبراج الميكانيكية، لكنها غالباً ما تفتقر للوحة تحكم ذكية جزائرية تنافس الأنظمة المستوردة باهظة الثمن. نحن نقدم لكم شراكة رابحة للطرفين:
-        </p>
-
         <div class="grid-3" style="margin-bottom:24px;">
-          <div class="kpi-mini-box" style="text-align:right;padding:18px;">
-            <div style="color:var(--color-sunshine-highlight);font-weight:800;font-size:16px;margin-bottom:6px;">1. صيغة التجهيز الأصلي (SDP Ready)</div>
-            <p style="font-size:13.5px;color:#c4c0b9;">
-              ندمج صندوق التحكم الذكي SDP وحساسات التربة كخيار قياسي أو إضافي في المحاور التي تبيعونها للفلاحين، مما يرفع القيمة التسويقية لمحاوركم.
+          <div class="kpi-mini-box" style="text-align:start;padding:18px;">
+            <div style="color:#fbbf24;font-weight:800;font-size:16px;margin-bottom:6px;" data-ar="1. التجهيز الأصلي (SDP Ready)" data-fr="1. Intégration OEM (SDP Ready)" data-en="1. OEM Integration (SDP Ready)">1. التجهيز الأصلي (SDP Ready)</div>
+            <p style="font-size:13.5px;color:#bae6fd;" data-ar="دمج صندوق التحكم الذكي وحساسات التربة والتدفق كخيار قياسي يرفع القيمة التسويقية لمحاوركم." data-fr="Intégrez notre boîtier intelligent et nos capteurs comme option native sur vos pivots." data-en="Embed our smart controller and sensor suite as a high-value native option on your pivots.">
+              دمج صندوق التحكم الذكي وحساسات التربة والتدفق كخيار قياسي يرفع القيمة التسويقية لمحاوركم.
             </p>
           </div>
-          <div class="kpi-mini-box" style="text-align:right;padding:18px;">
-            <div style="color:var(--color-mint-signal);font-weight:800;font-size:16px;margin-bottom:6px;">2. صيغة النسب المالية وتقاسم الصفقات</div>
-            <p style="font-size:13.5px;color:#c4c0b9;">
-              لا نطلب من المصنع ميزانية تطوير مسبقة؛ نتفق على نسبة مئوية واضحة أو هامش ربح مشترك عن كل محور ذكي يتم بيعه وتركيب نظامنا عليه.
+          <div class="kpi-mini-box" style="text-align:start;padding:18px;">
+            <div style="color:#4ade80;font-weight:800;font-size:16px;margin-bottom:6px;" data-ar="2. تقاسم الأرباح والصفقات" data-fr="2. Partage de Revenus sans Frais Fixes" data-en="2. Zero Upfront R&amp;D — Revenue Share">2. تقاسم الأرباح والصفقات</div>
+            <p style="font-size:13.5px;color:#bae6fd;" data-ar="شراكة مرنة بنظام النسب المشتركة عن كل محور ذكي يتم تسويقه وتركيبه." data-fr="Partenariat gagnant-gagnant basé sur une commission par pivot équipé." data-en="Win-win commercial partnership based on revenue sharing per deployed smart pivot.">
+              شراكة مرنة بنظام النسب المشتركة عن كل محور ذكي يتم تسويقه وتركيبه.
             </p>
           </div>
-          <div class="kpi-mini-box" style="text-align:right;padding:18px;">
-            <div style="color:#ffffff;font-weight:800;font-size:16px;margin-bottom:6px;">3. ترقية حظيرة زبائنكم القدامى</div>
-            <p style="font-size:13.5px;color:#c4c0b9;">
-              يمكننا التواصل المشترك مع الفلاحين الذين اشتروا منكم محاور تقليدية في السنوات الماضية لترقيتها بصندوق SDP وتقاسم عوائد التركيب والصيانة.
+          <div class="kpi-mini-box" style="text-align:start;padding:18px;">
+            <div style="color:#ffffff;font-weight:800;font-size:16px;margin-bottom:6px;" data-ar="3. ترقية محاور الزبائن القدامى" data-fr="3. Rétrofit de votre Parc Client" data-en="3. Legacy Fleet Retrofit">3. ترقية محاور الزبائن القدامى</div>
+            <p style="font-size:13.5px;color:#bae6fd;" data-ar="ترقية المحاور التقليدية التي بعتموها سابقاً وتقاسم عوائد التركيب والصيانة الدورية." data-fr="Modernisez les pivots déjà installés chez vos clients existants." data-en="Upgrade conventional pivots previously sold to your farming clients.">
+              ترقية المحاور التقليدية التي بعتموها سابقاً وتقاسم عوائد التركيب والصيانة الدورية.
             </p>
           </div>
         </div>
-
-        <a href="contact.html" data-page-target="contact.html" class="btn-sunshine">
-          تواصل معنا لعقد شراكة تصنيع وتجهيز محاور البيفو ←
-        </a>
+        <a href="contact.html" data-page-target="contact.html" class="btn-sunshine" data-ar="تواصل معنا لعقد شراكة تصنيع وتجهيز ←" data-fr="Proposer un Partenariat OEM →" data-en="Initiate an OEM Partnership →">تواصل معنا لعقد شراكة تصنيع وتجهيز ←</a>
       </div>
-
-      <!-- Co-Founder & Technical Talent Recruitment Section -->
-      <div class="t1-section-label">CO-FOUNDER &amp; TALENT RECRUITMENT • بوابة استقطاب الفريق والشركاء</div>
-      <h2 class="section-heading" style="margin-bottom:12px;">
-        انضم إلى نواة المؤسسة الناشئة (ورقلة • الوادي • بسكرة • تقرت)
-      </h2>
-      <p class="section-subhead" style="margin-bottom:28px;">
-        المشروع حائز رسمياً على علامة "مشروع مبتكر" ويمتلك الرؤية والنماذج الهندسية، ونبحث الآن عن كفاءات ميدانية وتقنية ذات طموح عالٍ لبناء فريق صلب للمشاركة في المعارض الوطنية وتنفيذ الصفقات الميدانية مقابل حصص شراكة (Equity) أو نسب من المشاريع:
-      </p>
 
       <div class="grid-2">
         <div class="pirsch-card">
-          <div class="pirsch-step-badge"><span class="step-num">R1</span><span>شريك تقني — أنظمة مدمجة وعتاد</span></div>
-          <h3 style="font-size:20px;font-weight:800;margin-bottom:8px;">مهندس إلكترونيك وأنظمة مدمجة (Embedded &amp; PCB Partner)</h3>
-          <p style="font-size:14px;color:var(--color-graphite);margin-bottom:14px;">
-            تطوير وتجميع بطاقات التحكم الصناعية (ESP32-S3 / STM32)، دوائر العزل الكهربائي، وربط حساسات RS-485 Modbus وشبكة LoRaWAN.
+          <div class="pirsch-step-badge"><span class="step-num">R1</span><span data-ar="شريك تقني — أنظمة مدمجة" data-fr="Partenaire Embedded &amp; PCB" data-en="Embedded &amp; PCB Partner">شريك تقني — أنظمة مدمجة</span></div>
+          <h3 style="font-size:19px;font-weight:800;margin-bottom:8px;" data-ar="مهندس إلكترونيك وأنظمة مدمجة (ESP32 / RS-485 / LoRa)" data-fr="Ingénieur Électronique &amp; Systèmes Embarqués" data-en="Embedded Systems &amp; Industrial IoT Engineer">مهندس إلكترونيك وأنظمة مدمجة (ESP32 / RS-485 / LoRa)</h3>
+          <p style="font-size:14px;color:var(--color-graphite);margin-bottom:14px;" data-ar="تطوير بطاقات التحكم الصناعية وربط حساسات التدفق والتربة في ورقلة والوادي وبسكرة." data-fr="Développement PCB industriel et intégration capteurs à Ouargla, El Oued et Biskra." data-en="Industrial PCB design and sensor integration in Ouargla, El Oued, and Biskra.">
+            تطوير بطاقات التحكم الصناعية وربط حساسات التدفق والتربة في ورقلة والوادي وبسكرة.
           </p>
-          <div style="font-size:12.5px;font-weight:700;color:var(--color-sdp-emerald);margin-bottom:14px;">
-            ✓ الولايات المفضلة: ورقلة، الوادي، بسكرة، تقرت • نظام حصص مؤسسين أو نسبة مشاريع
-          </div>
-          <a href="contact.html" data-page-target="contact.html" class="btn-carbon" style="width:100%;">ترشح كشريك أنظمة مدمجة ←</a>
+          <a href="contact.html" data-page-target="contact.html" class="btn-carbon" style="width:100%;" data-ar="ترشح الآن ←" data-fr="Postuler →" data-en="Apply Now →">ترشح الآن ←</a>
         </div>
 
         <div class="pirsch-card">
-          <div class="pirsch-step-badge"><span class="step-num">R2</span><span>شريك ميداني — كهرباء صناعية وميكانيك</span></div>
-          <h3 style="font-size:20px;font-weight:800;margin-bottom:8px;">تقني سامي / مهندس أتمتة وكهرباء صناعية (Field Automation)</h3>
-          <p style="font-size:14px;color:var(--color-graphite);margin-bottom:14px;">
-            خبرة عملية في خزائن الكهرباء ثلاثية الطور (380V)، القواطع، ومغيرات السرعة (VFD) لتركيب صناديق الترقية مباشرة في مزارع المحاور بالجنوب.
+          <div class="pirsch-step-badge"><span class="step-num">R2</span><span data-ar="شريك ميداني وتجاري" data-fr="Partenaire Terrain &amp; Électromécanique" data-en="Field Automation &amp; Commercial Partner">شريك ميداني وتجاري</span></div>
+          <h3 style="font-size:19px;font-weight:800;margin-bottom:8px;" data-ar="مهندس أتمتة وكهرباء صناعية / تطوير أعمال فلاحية" data-fr="Ingénieur Automatisme 380V &amp; Développement Commercial" data-en="Industrial Automation (380V VFD) &amp; Ag-Sales Partner">مهندس أتمتة وكهرباء صناعية / تطوير أعمال فلاحية</h3>
+          <p style="font-size:14px;color:var(--color-graphite);margin-bottom:14px;" data-ar="التركيب الميداني في المزارع الصحراوية وبناء الشراكات مع الفلاحين ومصنعي البيفو." data-fr="Déploiement terrain et relations avec les grands agriculteurs du Sud." data-en="Field installation across desert farms and commercial outreach to pivot owners.">
+            التركيب الميداني في المزارع الصحراوية وبناء الشراكات مع الفلاحين ومصنعي البيفو.
           </p>
-          <div style="font-size:12.5px;font-weight:700;color:var(--color-sdp-emerald);margin-bottom:14px;">
-            ✓ الولايات المفضلة: الوادي، بسكرة، ورقلة • عمولة تركيب مباشر + حصة في الصفقات
-          </div>
-          <a href="contact.html" data-page-target="contact.html" class="btn-carbon" style="width:100%;">ترشح كشريك تركيب وكهرباء صناعية ←</a>
-        </div>
-
-        <div class="pirsch-card">
-          <div class="pirsch-step-badge"><span class="step-num">R3</span><span>شريك برمجي — سحابة وتطبيقات</span></div>
-          <h3 style="font-size:20px;font-weight:800;margin-bottom:8px;">مطور واجهات وتطبيقات (Full-Stack &amp; Mobile App Partner)</h3>
-          <p style="font-size:14px;color:var(--color-graphite);margin-bottom:14px;">
-            المساهمة في تطوير المرحلة القادمة من تطبيق الهاتف النقال الفلاحي ولوحة المراقبة السحابية للمزارع الكبرى والتحضير للعروض أمام المستثمرين.
-          </p>
-          <div style="font-size:12.5px;font-weight:700;color:var(--color-sdp-emerald);margin-bottom:14px;">
-            ✓ العمل هجين / عن بعد أو من حاضنة جامعة ورقلة
-          </div>
-          <a href="contact.html" data-page-target="contact.html" class="btn-ghost-ink" style="width:100%;">ترشح كشريك تطوير برمجي ←</a>
-        </div>
-
-        <div class="pirsch-card">
-          <div class="pirsch-step-badge"><span class="step-num">R4</span><span>شريك تجاري — علاقات فلاحية</span></div>
-          <h3 style="font-size:20px;font-weight:800;margin-bottom:8px;">مسؤول تطوير أعمال وعلاقات مع الفلاحين ومصنعي البيفو</h3>
-          <p style="font-size:14px;color:var(--color-graphite);margin-bottom:14px;">
-            شبكة علاقات قوية مع الفلاحين الكبار، مستثمري المحيطات الفلاحية، وورشات تصنيع البيفو في وادي سوف، بسكرة، وورقلة لعقد الصفقات الميدانية.
-          </p>
-          <div style="font-size:12.5px;font-weight:700;color:var(--color-sdp-emerald);margin-bottom:14px;">
-            ✓ عمولات تجارية مجزية عن كل صفقة تجهيز أو شراكة مصنع
-          </div>
-          <a href="contact.html" data-page-target="contact.html" class="btn-ghost-ink" style="width:100%;">ترشح كشريك تجاري وميداني ←</a>
+          <a href="contact.html" data-page-target="contact.html" class="btn-carbon" style="width:100%;" data-ar="ترشح الآن ←" data-fr="Postuler →" data-en="Apply Now →">ترشح الآن ←</a>
         </div>
       </div>
     </div>
   </section>
-
   </main>
-
-  <!-- T1 Energy Onyx Depth Footer (#0f0e12) -->
+  <!-- Deep Pivot Navy Footer -->
   <footer class="t1-onyx-footer">
     <div class="container">
       <div class="footer-grid">
         <div>
           <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;">
-            <img src="assets/images/brand/logo-mark.png" alt="SDP Logo" style="width:46px;height:46px;border-radius:10px;background:#f8f5ed;padding:3px;">
+            <img src="assets/images/brand/logo-mark.png" alt="SDP Logo" style="width:52px;height:52px;border-radius:12px;background:#ffffff;padding:3px;border:2px solid #38bdf8;">
             <div>
-              <div style="font-weight:800;font-size:18px;color:#ffffff;">SMART DESERT PIVOT (SDP)</div>
-              <div style="font-size:12px;color:var(--color-mint-signal);">علامة مشروع مبتكر رقم 09072522272 • ورقلة، الجزائر</div>
+              <div style="font-weight:900;font-size:18px;color:#ffffff;">SMART DESERT PIVOT (SDP)</div>
+              <div style="font-size:12px;color:#4ade80;font-weight:700;" data-i18n="footer_sub">مؤسسة ناشئة حاصلة على وسم لابل (Label Projet Innovant) • حاضنة جامعة ورقلة، الجزائر</div>
             </div>
           </div>
-          <p style="font-size:14px;color:#b5b1aa;max-width:420px;line-height:1.7;">
-            منظومة هندسية جزائرية لتحويل وترقية محاور الرش الفلاحية التقليدية في الجنوب الكبير إلى محاور ذكية تعمل بالطاقة الشمسية، حساسات RS-485 الصناعية، وشبكات LoRaWAN بعيدة المدى.
+          <p style="font-size:14px;color:#bae6fd;max-width:430px;line-height:1.7;" data-i18n="footer_desc">
+            منظومة هندسية جزائرية لترقية محاور الرش الفلاحية إلى محاور ذكية تعمل بالطاقة الشمسية، حساسات التدفق والتربة، وشبكات LoRaWAN بعيدة المدى.
           </p>
         </div>
 
         <div>
-          <div class="footer-col-title">أقسام المنصة</div>
+          <div class="footer-col-title" data-i18n="footer_col1">المحاور الأربعة</div>
           <ul class="footer-links">
-            <li><a href="index.html" data-page-target="index.html">بوابة المنظومة المركزية</a></li>
-            <li><a href="technology.html" data-page-target="technology.html">صندوق الترقية والمكونات</a></li>
-            <li><a href="simulator.html" data-page-target="simulator.html">محاكي المحور الحي (Digital Twin)</a></li>
-            <li><a href="calculator.html" data-page-target="calculator.html">حاسبة التوفير المالي والمائي</a></li>
+            <li><a href="index.html" data-page-target="index.html" data-i18n="nav_home">الرئيسية</a></li>
+            <li><a href="technology.html" data-page-target="technology.html" data-i18n="nav_tech">التقنية والعتاد</a></li>
+            <li><a href="simulator.html" data-page-target="simulator.html" data-i18n="nav_hub">بوابة التجربة والنموذج</a></li>
+            <li><a href="contact.html" data-page-target="contact.html" data-i18n="nav_contact">الشراكات والتواصل</a></li>
           </ul>
         </div>
 
         <div>
-          <div class="footer-col-title">الموثوقية والشراكات</div>
+          <div class="footer-col-title" data-i18n="footer_col2">الصفحات التفصيلية</div>
           <ul class="footer-links">
-            <li><a href="pilot.html" data-page-target="pilot.html">النموذج الأولي وتصميم 3D CAD</a></li>
-            <li><a href="partnerships.html" data-page-target="partnerships.html">شراكات مصنعي البيفو واستقطاب الفريق</a></li>
-            <li><a href="about.html" data-page-target="about.html">شهادة علامة مشروع مبتكر</a></li>
-            <li><a href="contact.html" data-page-target="contact.html">طلب معاينة ميدانية للمزرعة</a></li>
+            <li><a href="pilot.html" data-page-target="pilot.html" data-i18n="sub_pilot">النموذج الأولي الفعلي (ألومنيوم + 3D)</a></li>
+            <li><a href="calculator.html" data-page-target="calculator.html" data-i18n="sub_calc">حاسبة التوفير (ROI)</a></li>
+            <li><a href="partnerships.html" data-page-target="partnerships.html" data-i18n="sub_part">شراكات البيفو والفريق</a></li>
+            <li><a href="about.html" data-page-target="about.html" data-i18n="sub_about">هوية المؤسسة ووسم لابل</a></li>
           </ul>
         </div>
 
         <div>
-          <div class="footer-col-title">التواصل المباشر (ورقلة)</div>
-          <ul class="footer-links" style="color:#d6d3cd;font-size:13.5px;">
-            <li><strong>المؤسس:</strong> م. لشهب جعفر (Lecheheb Djaafar)</li>
-            <li><strong>الهاتف / واتساب:</strong> <span class="font-mono" dir="ltr">+213 658 30 14 20</span></li>
-            <li><strong>البريد الرسمي:</strong> <span class="font-mono">lecheheb.djaafar@univ-ouargla.dz</span></li>
-            <li><strong>المقر:</strong> حاضنة أعمال جامعة قاصدي مرباح، ورقلة 30000</li>
+          <div class="footer-col-title" data-i18n="footer_col3">التواصل المباشر (ورقلة)</div>
+          <ul class="footer-links" style="color:#e0f2fe;font-size:13.5px;">
+            <li><strong data-ar="المؤسس:" data-fr="Fondateur :" data-en="Founder:">المؤسس:</strong> Lecheheb Djaafar (م. لشهب جعفر)</li>
+            <li><strong data-ar="الهاتف / واتساب:" data-fr="Tél / WhatsApp :" data-en="Phone / WhatsApp:">الهاتف / واتساب:</strong> <span class="font-mono" dir="ltr">+213 658 30 14 20</span></li>
+            <li><strong data-ar="البريد الرسمي:" data-fr="Email :" data-en="Email:">البريد الرسمي:</strong> <span class="font-mono">lecheheb.djaafar@univ-ouargla.dz</span></li>
+            <li><strong data-ar="المقر:" data-fr="Siège :" data-en="Location:">المقر:</strong> <span data-ar="حاضنة أعمال جامعة قاصدي مرباح، ورقلة 30000" data-fr="Incubateur Univ. Kasdi Merbah, Ouargla 30000" data-en="Kasdi Merbah University Incubator, Ouargla 30000">حاضنة أعمال جامعة قاصدي مرباح، ورقلة 30000</span></li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <div>© 2026–2027 Smart Desert Pivot (SDP) — جميع الحقوق محفوظة. تصميم معماري هجين مستلهم من T1 Energy و Pirsch.</div>
-        <div style="display:flex;gap:16px;">
-          <a href="https://startup.dz/" target="_blank" rel="noopener noreferrer" style="color:var(--color-sunshine-highlight);">بوابة Startup.dz</a>
-          <a href="https://www.linkedin.com/in/lecheheb-djaafar-226594348/" target="_blank" rel="noopener noreferrer" style="color:var(--color-mint-signal);">LinkedIn المؤسس</a>
-          <a href="https://www.youtube.com/@CodeCraftDL" target="_blank" rel="noopener noreferrer" style="color:#ffffff;">قناة فيديو النموذج</a>
+        <div data-ar="© 2026–2027 Smart Desert Pivot (SDP) — منصة استعراضية للمستثمرين والعملاء والشركاء." data-fr="© 2026–2027 Smart Desert Pivot (SDP) — Plateforme Vitrine Investisseurs & Clients." data-en="© 2026–2027 Smart Desert Pivot (SDP) — Investor, Client & Partner Showcase Platform.">© 2026–2027 Smart Desert Pivot (SDP) — منصة استعراضية للمستثمرين والعملاء والشركاء.</div>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;">
+          <a href="https://startup.dz/" target="_blank" rel="noopener noreferrer" style="color:var(--color-sunshine-highlight);font-weight:700;">Startup.dz ↗</a>
+          <a href="https://www.linkedin.com/in/lecheheb-djaafar-226594348/" target="_blank" rel="noopener noreferrer" style="color:#4ade80;font-weight:700;">LinkedIn ↗</a>
+          <a href="https://www.youtube.com/@CodeCraftDL" target="_blank" rel="noopener noreferrer" style="color:#ffffff;font-weight:700;">YouTube Demo ↗</a>
         </div>
       </div>
     </div>
   </footer>
 
+  <!-- Dedicated Smartphone Sticky Bottom App Bar -->
+  <nav class="mobile-bottom-nav" aria-label="Mobile Bottom Navigation">
+    <div class="mobile-bottom-nav-inner">
+      <a href="index.html" data-page-target="index.html" class="mobile-tab-item ">
+        <span class="tab-icon">🏠</span>
+        <span data-i18n="mob_home">الرئيسية</span>
+      </a>
+      <a href="technology.html" data-page-target="technology.html" class="mobile-tab-item ">
+        <span class="tab-icon">⚙️</span>
+        <span data-i18n="mob_tech">العتاد</span>
+      </a>
+      <a href="simulator.html" data-page-target="simulator.html" class="mobile-tab-item ">
+        <span class="tab-icon">🎛️</span>
+        <span data-i18n="mob_hub">النموذج والمحاكي</span>
+      </a>
+      <a href="contact.html" data-page-target="contact.html" class="mobile-tab-item active">
+        <span class="tab-icon">🤝</span>
+        <span data-i18n="mob_contact">تواصل وشراكة</span>
+      </a>
+    </div>
+  </nav>
+
   <!-- Global In-Page Toast Notification -->
   <div id="sdpToast" class="sdp-toast" role="status" aria-live="polite">
-    <div style="font-weight:800;font-size:14px;color:var(--color-sunshine-highlight);" id="sdpToastTitle">إشعار المنظومة</div>
-    <div style="font-size:13px;margin-top:3px;" id="sdpToastMsg">تم تنفيذ الإجراء بنجاح.</div>
+    <div style="font-weight:800;font-size:14px;color:var(--color-sunshine-highlight);" id="sdpToastTitle">SDP</div>
+    <div style="font-size:13px;margin-top:3px;" id="sdpToastMsg">OK</div>
   </div>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
   <script src="js/telemetry-stream.js"></script>
   <script src="js/contact-handler.js"></script>

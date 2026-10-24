@@ -1,34 +1,48 @@
 /* ==========================================================================
-   SMART DESERT PIVOT (SDP) — DESIGN TOKENS (variables.css)
-   Hybrid Design System: T1 Energy (60% Industrial CleanTech) + Pirsch (40% Interactive Paper & Ink)
+   SMART DESERT PIVOT (SDP) — HARMONIZED LOGO PALETTE & DESIGN TOKENS
+   Derived directly from the Official SDP Emblem:
+   - Hydro Solar Blue (#0077cc / #0284c7 / #38bdf8)
+   - Deep Pivot Navy (#062847 / #041c32)
+   - Lush Agritech Green (#15803d / #16a34a / #22c55e)
+   - Solar Sun Gold (#f59e0b / #fbbf24 / #ff9f1c)
    ========================================================================== */
 :root {
-  /* --- T1 Energy Surfaces & Monochromatic Warmth --- */
-  --color-vellum: #f0efe9;           /* Base page background (T1 Vellum Canvas) */
-  --color-cream-paper: #f8f5ed;      /* Card & interactive notebook surface (Pirsch Cream Paper) */
-  --color-paper-white: #ffffff;      /* Elevated panels, inputs, accordion buttons */
-  --color-carbon-warm: #322d2a;      /* T1 Floating Pill Nav, primary dark pills, 4px square indicators */
-  --color-onyx-depth: #0f0e12;       /* T1 Footer surface & deep industrial telemetry monitors */
-  --color-ink: #000000;              /* Pirsch 1px hairline borders & high-contrast display ink */
-  --color-graphite: #5c5854;         /* Secondary prose & technical descriptions */
-  --color-mercury: #8b8b8b;          /* Muted captions, timestamps, unit labels */
+  /* --- Clean Hydro-Agritech Surfaces --- */
+  --color-vellum: #f2f8fc;           /* Fresh sky-water tinted page canvas */
+  --color-cream-paper: #eaf4fb;      /* Soft hydro-blue card surface */
+  --color-paper-white: #ffffff;      /* Crisp white elevated panels */
+  --color-carbon-warm: #062847;      /* Deep Pivot Navy (replaces warm brown) */
+  --color-onyx-depth: #041c32;       /* Deep Ocean/Pivot Navy for footer & telemetry */
+  --color-ink: #072138;              /* Deep Navy Ink for high-contrast typography */
+  --color-graphite: #3b5a75;         /* Harmonized slate-blue secondary text */
+  --color-mercury: #6c88a3;          /* Muted captions & unit labels */
 
-  /* --- Pirsch & SDP Chromatic Signals (Rationed Discipline) --- */
-  --color-sunshine-highlight: #ffda6e; /* Primary conversion CTA fill, step badges, key callouts */
-  --color-sunshine-hover: #f5cc52;
-  --color-mint-signal: #6ece9d;        /* Live status dot, active nav state, positive water savings */
-  --color-sdp-emerald: #1f6f43;        /* SDP Official Brand Green */
-  --color-sdp-forest: #134629;         /* Deep agricultural accent */
-  --color-alert-amber: #d97706;        /* Desert heat / wind warning signal */
-  --color-alert-red: #dc2626;          /* Critical stop / fault signal */
-  --color-water-blue: #0284c7;         /* Irrigation spray & hydro metrics */
+  /* --- Logo Chromatic Accents --- */
+  --color-sunshine-highlight: #fbbf24; /* Solar Sun Gold from Logo */
+  --color-sunshine-hover: #f59e0b;     /* Deep Solar Amber */
+  --color-mint-signal: #22c55e;        /* Vibrant Agritech Leaf Green */
+  --color-sdp-emerald: #15803d;        /* Deep Field Row Green from Logo */
+  --color-sdp-forest: #14532d;         /* Deep Agritech Forest */
+  --color-water-blue: #0284c7;         /* Primary Hydro Droplet Blue */
+  --color-hydro-bright: #0096ff;       /* Bright River Stream Blue */
+  --color-hydro-soft: #e0f2fe;         /* Soft Water Mist Tint */
+  --color-agro-soft: #dcfce7;          /* Soft Leaf Green Tint */
+  --color-solar-soft: #fef3c7;         /* Soft Sunburst Tint */
+  --color-alert-amber: #d97706;
+  --color-alert-red: #dc2626;
+
+  /* --- Gradients Matching Logo --- */
+  --gradient-logo-hero: linear-gradient(135deg, #062847 0%, #0284c7 55%, #15803d 100%);
+  --gradient-hydro-pill: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  --gradient-agro-pill: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+  --gradient-solar-cta: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
 
   /* --- Typography Families --- */
   --font-sans-ar: 'Tajawal', 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-display: 'Tajawal', 'DM Sans', sans-serif;
   --font-mono: 'JetBrains Mono', 'Courier New', monospace;
 
-  /* --- Type Scale (T1 Energy + Pirsch Normalized) --- */
+  /* --- Type Scale --- */
   --text-label: 12px;
   --text-caption: 14px;
   --text-body-sm: 15px;
@@ -36,10 +50,10 @@
   --text-subheading: 21px;
   --text-heading-sm: 24px;
   --text-heading: 32px;
-  --text-display-sm: 40px;
-  --text-display: 52px;
+  --text-display-sm: 38px;
+  --text-display: 48px;
 
-  /* --- Spacing Scale (4px / 8px Grid) --- */
+  /* --- Spacing Scale --- */
   --spacing-4: 4px;
   --spacing-8: 8px;
   --spacing-12: 12px;
@@ -50,19 +64,21 @@
   --spacing-64: 64px;
   --spacing-96: 96px;
 
-  /* --- Border Radii (T1 Portholes & Pills + Pirsch 24px Cards) --- */
-  --radius-inputs: 8px;
-  --radius-images: 14px;
-  --radius-nav: 16px;
+  /* --- Border Radii --- */
+  --radius-inputs: 10px;
+  --radius-images: 16px;
+  --radius-nav: 20px;
   --radius-cards: 24px;
-  --radius-porthole: 56px;
+  --radius-porthole: 40px;
   --radius-pills: 100px;
   --radius-tags: 9999px;
 
   /* --- Layout & Borders --- */
-  --page-max-width: 1240px;
-  --border-hairline: 1px solid #322d2a;
-  --border-ink: 1px solid #000000;
-  --border-subtle: 1px solid rgba(50, 45, 42, 0.18);
-  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --page-max-width: 1260px;
+  --border-hairline: 1px solid rgba(2, 132, 199, 0.22);
+  --border-ink: 1px solid rgba(6, 40, 71, 0.16);
+  --border-subtle: 1px solid rgba(2, 132, 199, 0.14);
+  --shadow-card: 0 10px 30px -10px rgba(6, 40, 71, 0.08);
+  --shadow-elevated: 0 18px 40px -12px rgba(2, 132, 199, 0.18);
+  --transition-fast: 0.22s cubic-bezier(0.16, 1, 0.3, 1);
 }

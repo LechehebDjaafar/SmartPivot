@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>حاسبة التوفير المالي والمائي للفلاح الجزائري (ROI) | Smart Desert Pivot (SDP)</title>
+  <title>حاسبة الجدوى والتوفير المالي (ROI) | Smart Desert Pivot (SDP)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@500;700&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
@@ -16,255 +16,278 @@
 </head>
 <body>
 
-  <!-- Top Sovereign Algerian Accreditation Banner -->
+  <!-- Top Sovereign Startup Banner + Language Switcher (AR / FR / EN) + Dedicated Mobile Mode -->
   <div class="sovereign-topbar">
     <div class="sovereign-topbar-inner">
       <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
-        <span class="label-pill-tag">★ علامة مشروع مبتكر معتمد</span>
-        <span>الجمهورية الجزائرية الديمقراطية الشعبية • رقم القرار الوزاري: <strong class="font-mono" style="color:var(--color-sunshine-highlight);">09072522272</strong> (حاضنة جامعة قاصدي مرباح ورقلة)</span>
+        <span class="label-pill-tag" data-i18n="topbar_badge">★ مؤسسة ناشئة حاصلة على وسم لابل (Label Projet Innovant)</span>
+        <span data-i18n="topbar_desc">منصة استعراضية للمستثمرين والعملاء والشركاء الصناعيين • حاضنة جامعة قاصدي مرباح ورقلة — الجزائر</span>
       </div>
-      <div style="display:flex;align-items:center;gap:14px;">
-        <span class="font-mono live-clock-val" style="font-size:12px;color:#b5b1aa;">09:00:00 (توقيت الجزائر)</span>
-        <a href="about.html" data-page-target="about.html" style="color:var(--color-mint-signal);font-weight:700;text-decoration:underline;">وثيقة الاعتماد الرسمي ←</a>
+      <div class="topbar-controls">
+        <div class="lang-switcher" role="group" aria-label="Language Switcher">
+          <button type="button" class="lang-btn active" data-lang-switch="ar">العربية</button>
+          <button type="button" class="lang-btn" data-lang-switch="fr">FR</button>
+          <button type="button" class="lang-btn" data-lang-switch="en">EN</button>
+        </div>
+        <a href="about.html" data-page-target="about.html" data-i18n="topbar_cert_link" style="color:#fbbf24;font-weight:800;text-decoration:underline;font-size:12px;">بطاقة الاعتماد والهوية ←</a>
       </div>
     </div>
   </div>
 
-  <!-- T1 Energy Signature Floating Carbon Warm Pill Navigation -->
+  <!-- Clean 4-Pillar Showcase Navigation Bar -->
   <header class="site-header-wrap">
     <nav class="t1-pill-navbar" aria-label="التنقل الرئيسي">
       <a href="index.html" data-page-target="index.html" class="brand-lockup">
-        <img src="assets/images/brand/logo-mark.png" alt="شعار Smart Desert Pivot" class="brand-logo-img">
+        <img src="assets/images/brand/logo-mark.png" alt="Smart Desert Pivot Logo" class="brand-logo-img">
         <div>
           <div class="brand-title">
             <span>SMART DESERT PIVOT</span>
-            <span style="font-size:11px;background:var(--color-sunshine-highlight);color:var(--color-ink);padding:1px 7px;border-radius:99px;font-weight:800;">SDP</span>
+            <span style="font-size:11px;background:var(--gradient-solar-cta);color:#041c32;padding:1px 8px;border-radius:99px;font-weight:900;">SDP</span>
           </div>
-          <div class="brand-subtitle">أنظمة الري المحوري الذكي للصحراء الجزائرية</div>
+          <div class="brand-subtitle" data-i18n="brand_subtitle">أنظمة الري المحوري الذكي والطاقة الشمسية للصحراء الجزائرية</div>
         </div>
       </a>
 
-      <button type="button" class="mobile-menu-toggle" aria-label="فتح القائمة">☰ القائمة</button>
+      <button type="button" class="mobile-menu-toggle" aria-label="فتح القائمة" data-i18n="menu_btn">☰ القائمة</button>
 
+      <!-- Strictly 4 Professional Showcase Pillars in the Top Navbar -->
       <ul class="nav-links-list">
-        <li><a href="index.html" class="nav-link-item" data-page-target="index.html"><span>الرئيسية</span></a></li>
-          <li><a href="technology.html" class="nav-link-item" data-page-target="technology.html"><span>صندوق الترقية والمكونات</span></a></li>
-          <li><a href="simulator.html" class="nav-link-item" data-page-target="simulator.html"><span class="nav-live-dot"></span><span>محاكي المحور الحي</span></a></li>
-          <li><a href="calculator.html" class="nav-link-item active" data-page-target="calculator.html"><span>حاسبة التوفير (ROI)</span></a></li>
-          <li><a href="pilot.html" class="nav-link-item" data-page-target="pilot.html"><span>النموذج الأولي و 3D CAD</span></a></li>
-          <li><a href="partnerships.html" class="nav-link-item" data-page-target="partnerships.html"><span>شراكات البيفو والفريق</span></a></li>
-          <li><a href="about.html" class="nav-link-item" data-page-target="about.html"><span>الاعتماد الوزاري</span></a></li>
-          <li><a href="contact.html" class="nav-link-item" data-page-target="contact.html"><span>تواصل ومعاينة</span></a></li>
+        <li><a href="index.html" class="nav-link-item " data-page-target="index.html"><span data-i18n="nav_home">الرئيسية</span></a></li>
+        <li><a href="technology.html" class="nav-link-item " data-page-target="technology.html"><span data-i18n="nav_tech">التقنية والعتاد</span></a></li>
+        <li><a href="simulator.html" class="nav-link-item active" data-page-target="simulator.html"><span class="nav-live-dot"></span><span data-i18n="nav_hub">بوابة التجربة والنموذج</span></a></li>
+        <li><a href="contact.html" class="nav-link-item " data-page-target="contact.html"><span data-i18n="nav_contact">الشراكات والتواصل</span></a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Main Page Content -->
+  <!-- Sub-Hub Explorer Bar: Preserves All 8 Pages without Cluttering the Main Navbar -->
+  <div class="subhub-bar">
+    <div class="subhub-inner">
+      <span class="subhub-label" data-i18n="subhub_explore_label">🧭 التنقل السريع بين الصفحات التفصيلية:</span>
+      <div class="subhub-pills">
+        <a href="index.html" data-page-target="index.html" class="subhub-pill" data-i18n="sub_index">1. العرض التنفيذي</a>
+        <a href="technology.html" data-page-target="technology.html" class="subhub-pill" data-i18n="sub_tech">2. العتاد والحساسات (14)</a>
+        <a href="simulator.html" data-page-target="simulator.html" class="subhub-pill" data-i18n="sub_sim">3. المحاكي التفاعلي الحي</a>
+        <a href="pilot.html" data-page-target="pilot.html" class="subhub-pill" data-i18n="sub_pilot">4. النموذج الأولي الفعلي (ألومنيوم + 3D)</a>
+        <a href="calculator.html" data-page-target="calculator.html" class="subhub-pill active" data-i18n="sub_calc">5. حاسبة التوفير (ROI)</a>
+        <a href="partnerships.html" data-page-target="partnerships.html" class="subhub-pill" data-i18n="sub_part">6. شراكات البيفو والفريق</a>
+        <a href="about.html" data-page-target="about.html" class="subhub-pill" data-i18n="sub_about">7. هوية المؤسسة ووسم لابل</a>
+        <a href="contact.html" data-page-target="contact.html" class="subhub-pill" data-i18n="sub_contact">8. حجز معاينة وتواصل</a>
+      </div>
+    </div>
+  </div>
   <main>
-
-  <section class="section-block" style="padding-top:36px;">
+  <section class="section-block" style="padding-top:32px;">
     <div class="container">
       <div class="pirsch-step-badge">
-        <span class="step-num">04</span>
-        <span>ALGERIAN AG-ROI ENGINE • حاسبة الجدوى والتوفير المالي والمائي للفلاح الجزائري</span>
+        <span class="step-num">05</span>
+        <span data-ar="ALGERIAN AG-ROI ENGINE • حاسبة الجدوى والتوفير المالي والمائي" data-fr="ALGERIAN AG-ROI ENGINE • Calculateur de Rentabilité Agricole" data-en="ALGERIAN AG-ROI ENGINE • Farm Water &amp; Financial ROI Calculator">ALGERIAN AG-ROI ENGINE • حاسبة الجدوى والتوفير المالي والمائي</span>
       </div>
-      <h1 class="display-headline" style="margin-bottom:14px;">
+      <h1 class="display-headline" style="margin-bottom:14px;" data-ar="احسب العائد المالي السنوي بالدينار الجزائري و<strong>السنتيم</strong> لمستثمرتك الفلاحية" data-fr="Calculez votre gain annuel en <strong>Dinars (DZD) et Centimes</strong>" data-en="Calculate Annual Farm Savings in <strong>Algerian Dinars &amp; Centimes</strong>">
         احسب العائد المالي السنوي بالدينار الجزائري و<strong>السنتيم</strong> لمستثمرتك الفلاحية
       </h1>
-      <p class="section-subhead" style="margin-bottom:24px;">
-        تعتمد هذه الحاسبة على معدلات الاحتياج المائي الحقيقية للمحاصيل الصحراوية في الجنوب الجزائري (ورقلة، الوادي، بسكرة، المنيعة، أدرار) وتكاليف الضخ الفعلية:
+      <p class="section-subhead" style="margin-bottom:24px;" data-ar="تعتمد هذه الحاسبة على معدلات الاحتياج المائي للمحاصيل الصحراوية في الجنوب الجزائري وتكاليف الطاقة الفعلية:" data-fr="Ce calculateur s'appuie sur les besoins hydriques réels des cultures sahariennes en Algérie :" data-en="Grounded in real Saharan crop water requirements and pumping energy costs across southern Algeria:">
+        تعتمد هذه الحاسبة على معدلات الاحتياج المائي للمحاصيل الصحراوية في الجنوب الجزائري وتكاليف الطاقة الفعلية:
       </p>
 
-      <!-- Farm Presets -->
       <div style="margin-bottom:28px;">
-        <div style="font-size:13px;font-weight:700;margin-bottom:10px;color:var(--color-graphite);">نماذج مستثمرات فلاحية واقعية في الجنوب الجزائري:</div>
         <div class="filter-tag-row">
-          <button type="button" class="filter-pill roi-preset-btn active" data-pivots="2" data-area="40" data-crop="wheat" data-energy="grid">
-            🌾 مستثمرة حبوب متوسطة — ورقلة (محوران × 40 هكتار قمح)
+          <button type="button" class="filter-pill roi-preset-btn active" data-pivots="2" data-area="40" data-crop="wheat" data-energy="grid" data-ar="🌾 مستثمرة حبوب — ورقلة (محوران × 40 هكتار قمح)" data-fr="🌾 Ferme Céréalière — Ouargla (2 pivots × 40 ha Blé)" data-en="🌾 Wheat Farm — Ouargla (2 Pivots × 40 ha)">
+            🌾 مستثمرة حبوب — ورقلة (محوران × 40 هكتار قمح)
           </button>
-          <button type="button" class="filter-pill roi-preset-btn" data-pivots="4" data-area="30" data-crop="potato" data-energy="grid">
-            🥔 مستثمرة بطاطس صحراوية — وادي سوف (4 محاور × 30 هكتار)
+          <button type="button" class="filter-pill roi-preset-btn" data-pivots="4" data-area="30" data-crop="potato" data-energy="grid" data-ar="🥔 مستثمرة بطاطس — وادي سوف (4 محاور × 30 هكتار)" data-fr="🥔 Pomme de Terre — El Oued (4 pivots × 30 ha)" data-en="🥔 Potato Farm — El Oued (4 Pivots × 30 ha)">
+            🥔 مستثمرة بطاطس — وادي سوف (4 محاور × 30 هكتار)
           </button>
-          <button type="button" class="filter-pill roi-preset-btn" data-pivots="3" data-area="40" data-crop="alfalfa" data-energy="diesel">
-            🌿 مزرعة أعلاف وفصة — بسكرة (3 محاور × 40 هكتار ديزل)
+          <button type="button" class="filter-pill roi-preset-btn" data-pivots="3" data-area="40" data-crop="alfalfa" data-energy="diesel" data-ar="🌿 مزرعة أعلاف — بسكرة (3 محاور × 40 هكتار ديزل)" data-fr="🌿 Luzerne &amp; Fourrage — Biskra (3 pivots × 40 ha Diesel)" data-en="🌿 Alfalfa Forage — Biskra (3 Pivots × 40 ha Diesel)">
+            🌿 مزرعة أعلاف — بسكرة (3 محاور × 40 هكتار ديزل)
           </button>
-          <button type="button" class="filter-pill roi-preset-btn" data-pivots="10" data-area="50" data-crop="corn" data-energy="diesel">
-            🚜 مشروع ODAS استراتيجي — المنيعة / أدرار (10 محاور × 50 هكتار)
+          <button type="button" class="filter-pill roi-preset-btn" data-pivots="10" data-area="50" data-crop="corn" data-energy="diesel" data-ar="🚜 مشروع استراتيجي كبرى — المنيعة / أدرار (10 محاور × 50 هكتار)" data-fr="🚜 Grand Projet ODAS — El Meniaa (10 pivots × 50 ha)" data-en="🚜 Mega ODAS Estate — El Meniaa (10 Pivots × 50 ha)">
+            🚜 مشروع استراتيجي كبرى — المنيعة / أدرار (10 محاور × 50 هكتار)
           </button>
         </div>
       </div>
 
       <div class="grid-2" style="align-items:start;">
-        <!-- Inputs Card -->
         <div class="pirsch-card">
-          <h2 style="font-size:21px;font-weight:800;margin-bottom:20px;">معطيات المستثمرة الفلاحية</h2>
+          <h2 style="font-size:21px;font-weight:800;margin-bottom:20px;" data-ar="معطيات المستثمرة الفلاحية" data-fr="Paramètres de l'Exploitation" data-en="Farm Configuration Parameters">معطيات المستثمرة الفلاحية</h2>
 
           <div class="slider-control-group">
             <div class="slider-header">
-              <label for="roiPivotsRange">1. عدد محاور الرش (Pivots) في المزرعة:</label>
-              <span id="roiPivotsBadge" class="font-mono" style="background:var(--color-sunshine-highlight);padding:2px 10px;border-radius:99px;border:var(--border-ink);">2 محور</span>
+              <label for="roiPivotsRange" data-ar="1. عدد محاور الرش (Pivots):" data-fr="1. Nombre de Pivots :" data-en="1. Number of Center Pivots:">1. عدد محاور الرش (Pivots):</label>
+              <span id="roiPivotsBadge" class="font-mono" style="background:var(--color-sunshine-highlight);color:#041c32;padding:2px 10px;border-radius:99px;font-weight:800;">2 محور</span>
             </div>
             <input type="range" id="roiPivotsRange" class="sdp-range" min="1" max="30" value="2">
-            <div style="display:flex;justify-content:space-between;font-size:11.5px;color:var(--color-mercury);margin-top:4px;">
-              <span>محور واحد</span>
-              <span>15 محوراً</span>
-              <span>30 محوراً (شركة كبرى)</span>
-            </div>
           </div>
 
           <div style="margin-bottom:16px;">
-            <label for="roiAreaSelect" style="display:block;font-weight:700;font-size:14px;margin-bottom:6px;">2. مساحة المحور الواحد (هكتار):</label>
+            <label for="roiAreaSelect" style="display:block;font-weight:700;font-size:14px;margin-bottom:6px;" data-ar="2. مساحة المحور الواحد (هكتار):" data-fr="2. Surface par Pivot (Hectares) :" data-en="2. Area per Pivot (Hectares):">2. مساحة المحور الواحد (هكتار):</label>
             <select id="roiAreaSelect" class="sdp-select">
-              <option value="30">30 هكتار (نصف قطر 309 متر — شائع في وادي سوف)</option>
-              <option value="40" selected>40 هكتار (نصف قطر 357 متر — القياسي في ورقلة وتقرت)</option>
-              <option value="50">50 هكتار (نصف قطر 399 متر — محيطات الحبوب الكبرى)</option>
-              <option value="75">75 هكتار (نصف قطر 488 متر — المحاور الصناعية العملاقة)</option>
+              <option value="30">30 ha (R = 309m — El Oued)</option>
+              <option value="40" selected>40 ha (R = 357m — Ouargla / Touggourt)</option>
+              <option value="50">50 ha (R = 399m — Grand Sud)</option>
+              <option value="75">75 ha (R = 488m — Industrial Estate)</option>
             </select>
           </div>
 
           <div style="margin-bottom:16px;">
-            <label for="roiCropSelect" style="display:block;font-weight:700;font-size:14px;margin-bottom:6px;">3. نوع المحصول الاستراتيجي المزروع:</label>
+            <label for="roiCropSelect" style="display:block;font-weight:700;font-size:14px;margin-bottom:6px;" data-ar="3. نوع المحصول المزروع:" data-fr="3. Type de Culture Stratégique :" data-en="3. Strategic Crop Type:">3. نوع المحصول المزروع:</label>
             <select id="roiCropSelect" class="sdp-select">
-              <option value="wheat" selected>القمح الصلب واللين (احتياج مرجعي: 6,500 م³/هكتار)</option>
-              <option value="barley">الشعير الصحراوي (احتياج مرجعي: 5,200 م³/هكتار)</option>
-              <option value="potato">البطاطس الصحراوية (احتياج مرجعي: 8,200 م³/هكتار)</option>
-              <option value="corn">الذرة العلفية وعباد الشمس (احتياج مرجعي: 9,500 م³/هكتار)</option>
-              <option value="alfalfa">الفصة والأعلاف الخضراء متعددة الحشات (12,000 م³/هكتار)</option>
+              <option value="wheat" selected>القمح الصلب واللين / Blé / Wheat (6,500 m³/ha)</option>
+              <option value="barley">الشعير / Orge / Barley (5,200 m³/ha)</option>
+              <option value="potato">البطاطس / Pomme de terre / Potato (8,200 m³/ha)</option>
+              <option value="corn">الذرة وعباد الشمس / Maïs / Corn (9,500 m³/ha)</option>
+              <option value="alfalfa">الفصة والأعلاف / Luzerne / Alfalfa (12,000 m³/ha)</option>
             </select>
           </div>
 
           <div style="margin-bottom:20px;">
-            <label for="roiEnergySelect" style="display:block;font-weight:700;font-size:14px;margin-bottom:6px;">4. مصدر الطاقة لتشغيل مضخات الآبار العميقة:</label>
+            <label for="roiEnergySelect" style="display:block;font-weight:700;font-size:14px;margin-bottom:6px;" data-ar="4. مصدر طاقة المضخات:" data-fr="4. Source d'Énergie de Pompage :" data-en="4. Deep-Well Pumping Power Source:">4. مصدر طاقة المضخات:</label>
             <select id="roiEnergySelect" class="sdp-select">
-              <option value="grid" selected>شبكة الكهرباء الفلاحية (سونلغاز) + صيانة المضخات (6.5 دج/م³)</option>
-              <option value="diesel">مولدات المازوت / الديزل في المحيطات غير المكهربة (16.5 دج/م³)</option>
-              <option value="solar">طاقة شمسية هجينة مع إهلاك وصيانة المضخات الغاطسة (4.0 دج/م³)</option>
+              <option value="grid" selected>كهرباء فلاحية سونلغاز / Réseau Électrique / Grid (6.5 DZD/m³)</option>
+              <option value="diesel">مولدات المازوت / Diesel Generator (16.5 DZD/m³)</option>
+              <option value="solar">طاقة شمسية هجينة / Solaire Hybride / Solar (4.0 DZD/m³)</option>
             </select>
-          </div>
-
-          <div style="background:var(--color-paper-white);border:var(--border-ink);border-radius:12px;padding:14px;font-size:13px;color:var(--color-graphite);">
-            <strong>ملاحظة منهجية:</strong> يُحتسب التوفير على أساس خفض هدر الضخ بنسبة محافظة (<strong>28%</strong>) مع إضافة عائد تقليل غسيل الأسمدة الآزوتية (4,200 دج/هكتار).
           </div>
         </div>
 
-        <!-- Outputs Card -->
         <div class="pirsch-card-dark">
           <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;">
-            <span class="label-pill-tag">تقرير الجدوى السنوي للمزرعة</span>
-            <span class="font-mono" style="font-size:12px;color:var(--color-mint-signal);" id="roiOutTotalHa">80 هكتار</span>
+            <span class="label-pill-tag" data-ar="تقرير الجدوى السنوي للمزرعة" data-fr="Bilan Annuel d'Économies" data-en="Annual Farm Savings Report">تقرير الجدوى السنوي للمزرعة</span>
+            <span class="font-mono" style="font-size:13px;color:#4ade80;font-weight:800;" id="roiOutTotalHa">80 هكتار</span>
           </div>
 
-          <div style="margin-bottom:20px;padding-bottom:18px;border-bottom:1px solid rgba(255,255,255,0.14);">
-            <div style="font-size:13px;color:#b5b1aa;">صافي التوفير المالي السنوي (طاقة + صيانة مضخات + أسمدة):</div>
-            <div id="roiOutEnergySavedDzd" class="font-mono" style="font-size:40px;font-weight:800;color:var(--color-sunshine-highlight);line-height:1.2;margin-top:4px;">
+          <div style="margin-bottom:20px;padding-bottom:18px;border-bottom:1px solid rgba(56,189,248,0.2);">
+            <div style="font-size:13px;color:#bae6fd;" data-ar="صافي التوفير المالي السنوي المتوقع:" data-fr="Gain financier net annuel estimé :" data-en="Projected Net Annual Financial Savings:">صافي التوفير المالي السنوي المتوقع:</div>
+            <div id="roiOutEnergySavedDzd" class="font-mono" style="font-size:38px;font-weight:900;color:var(--color-sunshine-highlight);line-height:1.2;margin-top:4px;">
               1,282,400 دج
             </div>
-            <div id="roiOutCentimes" style="font-size:15px;font-weight:700;color:var(--color-mint-signal);margin-top:4px;">
+            <div id="roiOutCentimes" style="font-size:15px;font-weight:700;color:#4ade80;margin-top:4px;">
               يعادل 128.2 مليون سنتيم جزائري سنوياً
             </div>
           </div>
 
           <div class="grid-2" style="gap:14px;margin-bottom:20px;">
-            <div class="kpi-mini-box" style="text-align:right;">
-              <div class="kpi-mini-lbl">المياه الجوفية الموفرة سنوياً:</div>
-              <div class="kpi-mini-val" id="roiOutWaterSaved" style="font-size:18px;color:#ffffff;margin-top:4px;">145,600 م³ / سنة</div>
+            <div class="kpi-mini-box" style="text-align:start;">
+              <div class="kpi-mini-lbl" data-ar="المياه الجوفية الموفرة سنوياً:" data-fr="Eau souterraine économisée :" data-en="Groundwater Saved / Year:">المياه الجوفية الموفرة سنوياً:</div>
+              <div class="kpi-mini-val" id="roiOutWaterSaved" style="font-size:17px;color:#ffffff;margin-top:4px;">145,600 م³ / سنة</div>
             </div>
-            <div class="kpi-mini-box" style="text-align:right;">
-              <div class="kpi-mini-lbl">الاستهلاك المرجعي قبل الترقية:</div>
-              <div class="kpi-mini-val" id="roiOutBaseWater" style="font-size:18px;color:#b5b1aa;margin-top:4px;">520,000 م³</div>
+            <div class="kpi-mini-box" style="text-align:start;">
+              <div class="kpi-mini-lbl" data-ar="الاستهلاك المرجعي قبل الترقية:" data-fr="Consommation de référence :" data-en="Baseline Water Volume:">الاستهلاك المرجعي قبل الترقية:</div>
+              <div class="kpi-mini-val" id="roiOutBaseWater" style="font-size:17px;color:#93c5fd;margin-top:4px;">520,000 م³</div>
             </div>
-            <div class="kpi-mini-box" style="text-align:right;">
-              <div class="kpi-mini-lbl">تقليص ساعات عمل المضخة:</div>
-              <div class="kpi-mini-val" id="roiOutPumpHours" style="font-size:18px;color:var(--color-mint-signal);margin-top:4px;">1,213 ساعة ضخ / سنة</div>
+            <div class="kpi-mini-box" style="text-align:start;">
+              <div class="kpi-mini-lbl" data-ar="تقليص ساعات عمل المضخة:" data-fr="Heures de pompage évitées :" data-en="Pump Runtime Saved:">تقليص ساعات عمل المضخة:</div>
+              <div class="kpi-mini-val" id="roiOutPumpHours" style="font-size:17px;color:#4ade80;margin-top:4px;">1,213 ساعة ضخ / سنة</div>
             </div>
-            <div class="kpi-mini-box" style="text-align:right;">
-              <div class="kpi-mini-lbl">تكلفة تجهيز SDP للمزرعة:</div>
-              <div class="kpi-mini-val" id="roiOutKitInvestment" style="font-size:16px;color:#ffffff;margin-top:4px;">640,000 دج (64 مليون سنتيم)</div>
+            <div class="kpi-mini-box" style="text-align:start;">
+              <div class="kpi-mini-lbl" data-ar="تكلفة التجهيز التقديرية:" data-fr="Investissement Kit SDP :" data-en="Estimated Kit Investment:">تكلفة التجهيز التقديرية:</div>
+              <div class="kpi-mini-val" id="roiOutKitInvestment" style="font-size:15px;color:#ffffff;margin-top:4px;">640,000 دج</div>
             </div>
           </div>
 
-          <div style="background:rgba(110,206,157,0.14);border:1px solid var(--color-mint-signal);border-radius:14px;padding:14px;margin-bottom:22px;">
-            <div style="font-size:12px;color:#d6d3cd;">فترة استرداد رأس المال المستثمر (Payback Period):</div>
-            <div id="roiOutPayback" style="font-size:19px;font-weight:800;color:var(--color-mint-signal);margin-top:2px;">
+          <div style="background:rgba(34,197,94,0.16);border:1px solid #22c55e;border-radius:14px;padding:14px;margin-bottom:22px;">
+            <div style="font-size:12px;color:#bae6fd;" data-ar="فترة استرداد رأس المال (Payback Period):" data-fr="Délai d'amortissement (Payback) :" data-en="Estimated Capital Payback Period:">فترة استرداد رأس المال (Payback Period):</div>
+            <div id="roiOutPayback" style="font-size:18px;font-weight:800;color:#4ade80;margin-top:2px;">
               6.0 شهر (أقل من موسم فلاحي واحد)
             </div>
           </div>
 
-          <a href="contact.html" data-page-target="contact.html" class="btn-sunshine" style="width:100%;">
-            اطلب عرض سعر رسمي ومعاينة مجانية لمحاورك ←
+          <a href="contact.html" data-page-target="contact.html" class="btn-sunshine" style="width:100%;" data-ar="تواصل معنا لطلب دراسة جدوى لمزرعتك ←" data-fr="Demander une étude personnalisée →" data-en="Request a Custom Farm Feasibility Study →">
+            تواصل معنا لطلب دراسة جدوى لمزرعتك ←
           </a>
         </div>
       </div>
     </div>
   </section>
-
   </main>
-
-  <!-- T1 Energy Onyx Depth Footer (#0f0e12) -->
+  <!-- Deep Pivot Navy Footer -->
   <footer class="t1-onyx-footer">
     <div class="container">
       <div class="footer-grid">
         <div>
           <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;">
-            <img src="assets/images/brand/logo-mark.png" alt="SDP Logo" style="width:46px;height:46px;border-radius:10px;background:#f8f5ed;padding:3px;">
+            <img src="assets/images/brand/logo-mark.png" alt="SDP Logo" style="width:52px;height:52px;border-radius:12px;background:#ffffff;padding:3px;border:2px solid #38bdf8;">
             <div>
-              <div style="font-weight:800;font-size:18px;color:#ffffff;">SMART DESERT PIVOT (SDP)</div>
-              <div style="font-size:12px;color:var(--color-mint-signal);">علامة مشروع مبتكر رقم 09072522272 • ورقلة، الجزائر</div>
+              <div style="font-weight:900;font-size:18px;color:#ffffff;">SMART DESERT PIVOT (SDP)</div>
+              <div style="font-size:12px;color:#4ade80;font-weight:700;" data-i18n="footer_sub">مؤسسة ناشئة حاصلة على وسم لابل (Label Projet Innovant) • حاضنة جامعة ورقلة، الجزائر</div>
             </div>
           </div>
-          <p style="font-size:14px;color:#b5b1aa;max-width:420px;line-height:1.7;">
-            منظومة هندسية جزائرية لتحويل وترقية محاور الرش الفلاحية التقليدية في الجنوب الكبير إلى محاور ذكية تعمل بالطاقة الشمسية، حساسات RS-485 الصناعية، وشبكات LoRaWAN بعيدة المدى.
+          <p style="font-size:14px;color:#bae6fd;max-width:430px;line-height:1.7;" data-i18n="footer_desc">
+            منظومة هندسية جزائرية لترقية محاور الرش الفلاحية إلى محاور ذكية تعمل بالطاقة الشمسية، حساسات التدفق والتربة، وشبكات LoRaWAN بعيدة المدى.
           </p>
         </div>
 
         <div>
-          <div class="footer-col-title">أقسام المنصة</div>
+          <div class="footer-col-title" data-i18n="footer_col1">المحاور الأربعة</div>
           <ul class="footer-links">
-            <li><a href="index.html" data-page-target="index.html">بوابة المنظومة المركزية</a></li>
-            <li><a href="technology.html" data-page-target="technology.html">صندوق الترقية والمكونات</a></li>
-            <li><a href="simulator.html" data-page-target="simulator.html">محاكي المحور الحي (Digital Twin)</a></li>
-            <li><a href="calculator.html" data-page-target="calculator.html">حاسبة التوفير المالي والمائي</a></li>
+            <li><a href="index.html" data-page-target="index.html" data-i18n="nav_home">الرئيسية</a></li>
+            <li><a href="technology.html" data-page-target="technology.html" data-i18n="nav_tech">التقنية والعتاد</a></li>
+            <li><a href="simulator.html" data-page-target="simulator.html" data-i18n="nav_hub">بوابة التجربة والنموذج</a></li>
+            <li><a href="contact.html" data-page-target="contact.html" data-i18n="nav_contact">الشراكات والتواصل</a></li>
           </ul>
         </div>
 
         <div>
-          <div class="footer-col-title">الموثوقية والشراكات</div>
+          <div class="footer-col-title" data-i18n="footer_col2">الصفحات التفصيلية</div>
           <ul class="footer-links">
-            <li><a href="pilot.html" data-page-target="pilot.html">النموذج الأولي وتصميم 3D CAD</a></li>
-            <li><a href="partnerships.html" data-page-target="partnerships.html">شراكات مصنعي البيفو واستقطاب الفريق</a></li>
-            <li><a href="about.html" data-page-target="about.html">شهادة علامة مشروع مبتكر</a></li>
-            <li><a href="contact.html" data-page-target="contact.html">طلب معاينة ميدانية للمزرعة</a></li>
+            <li><a href="pilot.html" data-page-target="pilot.html" data-i18n="sub_pilot">النموذج الأولي الفعلي (ألومنيوم + 3D)</a></li>
+            <li><a href="calculator.html" data-page-target="calculator.html" data-i18n="sub_calc">حاسبة التوفير (ROI)</a></li>
+            <li><a href="partnerships.html" data-page-target="partnerships.html" data-i18n="sub_part">شراكات البيفو والفريق</a></li>
+            <li><a href="about.html" data-page-target="about.html" data-i18n="sub_about">هوية المؤسسة ووسم لابل</a></li>
           </ul>
         </div>
 
         <div>
-          <div class="footer-col-title">التواصل المباشر (ورقلة)</div>
-          <ul class="footer-links" style="color:#d6d3cd;font-size:13.5px;">
-            <li><strong>المؤسس:</strong> م. لشهب جعفر (Lecheheb Djaafar)</li>
-            <li><strong>الهاتف / واتساب:</strong> <span class="font-mono" dir="ltr">+213 658 30 14 20</span></li>
-            <li><strong>البريد الرسمي:</strong> <span class="font-mono">lecheheb.djaafar@univ-ouargla.dz</span></li>
-            <li><strong>المقر:</strong> حاضنة أعمال جامعة قاصدي مرباح، ورقلة 30000</li>
+          <div class="footer-col-title" data-i18n="footer_col3">التواصل المباشر (ورقلة)</div>
+          <ul class="footer-links" style="color:#e0f2fe;font-size:13.5px;">
+            <li><strong data-ar="المؤسس:" data-fr="Fondateur :" data-en="Founder:">المؤسس:</strong> Lecheheb Djaafar (م. لشهب جعفر)</li>
+            <li><strong data-ar="الهاتف / واتساب:" data-fr="Tél / WhatsApp :" data-en="Phone / WhatsApp:">الهاتف / واتساب:</strong> <span class="font-mono" dir="ltr">+213 658 30 14 20</span></li>
+            <li><strong data-ar="البريد الرسمي:" data-fr="Email :" data-en="Email:">البريد الرسمي:</strong> <span class="font-mono">lecheheb.djaafar@univ-ouargla.dz</span></li>
+            <li><strong data-ar="المقر:" data-fr="Siège :" data-en="Location:">المقر:</strong> <span data-ar="حاضنة أعمال جامعة قاصدي مرباح، ورقلة 30000" data-fr="Incubateur Univ. Kasdi Merbah, Ouargla 30000" data-en="Kasdi Merbah University Incubator, Ouargla 30000">حاضنة أعمال جامعة قاصدي مرباح، ورقلة 30000</span></li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <div>© 2026–2027 Smart Desert Pivot (SDP) — جميع الحقوق محفوظة. تصميم معماري هجين مستلهم من T1 Energy و Pirsch.</div>
-        <div style="display:flex;gap:16px;">
-          <a href="https://startup.dz/" target="_blank" rel="noopener noreferrer" style="color:var(--color-sunshine-highlight);">بوابة Startup.dz</a>
-          <a href="https://www.linkedin.com/in/lecheheb-djaafar-226594348/" target="_blank" rel="noopener noreferrer" style="color:var(--color-mint-signal);">LinkedIn المؤسس</a>
-          <a href="https://www.youtube.com/@CodeCraftDL" target="_blank" rel="noopener noreferrer" style="color:#ffffff;">قناة فيديو النموذج</a>
+        <div data-ar="© 2026–2027 Smart Desert Pivot (SDP) — منصة استعراضية للمستثمرين والعملاء والشركاء." data-fr="© 2026–2027 Smart Desert Pivot (SDP) — Plateforme Vitrine Investisseurs & Clients." data-en="© 2026–2027 Smart Desert Pivot (SDP) — Investor, Client & Partner Showcase Platform.">© 2026–2027 Smart Desert Pivot (SDP) — منصة استعراضية للمستثمرين والعملاء والشركاء.</div>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;">
+          <a href="https://startup.dz/" target="_blank" rel="noopener noreferrer" style="color:var(--color-sunshine-highlight);font-weight:700;">Startup.dz ↗</a>
+          <a href="https://www.linkedin.com/in/lecheheb-djaafar-226594348/" target="_blank" rel="noopener noreferrer" style="color:#4ade80;font-weight:700;">LinkedIn ↗</a>
+          <a href="https://www.youtube.com/@CodeCraftDL" target="_blank" rel="noopener noreferrer" style="color:#ffffff;font-weight:700;">YouTube Demo ↗</a>
         </div>
       </div>
     </div>
   </footer>
 
+  <!-- Dedicated Smartphone Sticky Bottom App Bar -->
+  <nav class="mobile-bottom-nav" aria-label="Mobile Bottom Navigation">
+    <div class="mobile-bottom-nav-inner">
+      <a href="index.html" data-page-target="index.html" class="mobile-tab-item ">
+        <span class="tab-icon">🏠</span>
+        <span data-i18n="mob_home">الرئيسية</span>
+      </a>
+      <a href="technology.html" data-page-target="technology.html" class="mobile-tab-item ">
+        <span class="tab-icon">⚙️</span>
+        <span data-i18n="mob_tech">العتاد</span>
+      </a>
+      <a href="simulator.html" data-page-target="simulator.html" class="mobile-tab-item active">
+        <span class="tab-icon">🎛️</span>
+        <span data-i18n="mob_hub">النموذج والمحاكي</span>
+      </a>
+      <a href="contact.html" data-page-target="contact.html" class="mobile-tab-item ">
+        <span class="tab-icon">🤝</span>
+        <span data-i18n="mob_contact">تواصل وشراكة</span>
+      </a>
+    </div>
+  </nav>
+
   <!-- Global In-Page Toast Notification -->
   <div id="sdpToast" class="sdp-toast" role="status" aria-live="polite">
-    <div style="font-weight:800;font-size:14px;color:var(--color-sunshine-highlight);" id="sdpToastTitle">إشعار المنظومة</div>
-    <div style="font-size:13px;margin-top:3px;" id="sdpToastMsg">تم تنفيذ الإجراء بنجاح.</div>
+    <div style="font-weight:800;font-size:14px;color:var(--color-sunshine-highlight);" id="sdpToastTitle">SDP</div>
+    <div style="font-size:13px;margin-top:3px;" id="sdpToastMsg">OK</div>
   </div>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
   <script src="js/telemetry-stream.js"></script>
   <script src="js/calculator-engine.js"></script>
